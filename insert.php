@@ -50,10 +50,14 @@
 	$query .= "first_name, last_name, email, fruit_everyday, fruit_per_day, fruit_buy, fruit_as, fruit_frequency, fruit_spend, fruit_store
 	, fruit_reason, fruit_difficult, fruit_drink, fruit_ingredients, fruit_agree";
 	$query .= ") VALUES (";
-	$query .= "  '{$firstName}', '{$lastName}'";
+	$query .= "  '{$firstName}', '{$lastName}', '{$email}', '{$fruit_everyday}', '{$fruit_per_day}', '{$fruit_buy
+	}', '{$fruit_as}', '{$fruit_frequency}', '{$fruit_spend}', '{$fruit_store}', '{$fruit_reason}', '{$fruit_difficult}', '{$fruit_drink}', '{$fruit_ingredients}', '{$fruit_agree}'";
 	$query .= ")";
 
 	$result = mysqli_query($connection, $query);
+
+	// 5. Close database connection
+	mysqli_close($connection);
 
 ?>
 
@@ -64,28 +68,9 @@
 </head>
 <body>
 
-	
-
-<?php
-	if ($result) {
-		echo "Success! - the query didn't error-out";
-
-?>
-
-
-<?php
-
-	} else {
-		die("Database query failed.");
-	}
-?>
+<a href ="index.php"></a>
 
 
 </body>
 </html>
 
-
-<?php
-	// 5. Close database connection
-	mysqli_close($connection);
-?>
