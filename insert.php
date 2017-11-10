@@ -1,19 +1,14 @@
 <?php
 	// 1. Create a database connection
-	$dbhost = "66.147.242.186";
-	$dbuser = "urcscon3_queens";
-	$dbpass = "coffee1N";
-	$dbname = "urcscon3_queens";
+	$dbhost = '66.147.242.186';
+	$dbuser = 'urcscon3_queens';
+	$dbpass = 'coffee1N';
+	$dbname = 'urcscon3_queens';
 
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 	// Often these are form values in $_POST
-if ($mysqli->connect_error) {
-    die('Connect Error (' . $mysqli->connect_errno . ') '
-            . $mysqli->connect_error);
-}
-echo '<p>Connection OK '. $mysqli->host_info.'</p>';
-echo '<p>Server '.$mysqli->server_info.'</p>';
+
 
 
 	$firstName = Trim(stripslashes($_POST['first']));
@@ -31,7 +26,7 @@ echo '<p>Server '.$mysqli->server_info.'</p>';
 
 
 	// 2. Perform database query
-	$query  = "INSERT INTO urcscon3_queens (";
+	$query  = "INSERT INTO form (";
 	$query .= "first_name, last_name";
 	$query .= ") VALUES (";
 	$query .= "  '{$firstName}', '{$lastName}'";
