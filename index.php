@@ -62,19 +62,19 @@
 			<div class="input-block">
 				<p>Approximately how many fruits do you eat per day?</p>
 				<p>
-		      <input class="with-gap" name="amount" type="radio" id="amount-yikes" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-yikes" />
 		      <label for="amount-yikes">1 or less</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="amount" type="radio" id="amount-few" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-few" />
 		      <label for="amount-few">2-3</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="amount" type="radio" id="amount-four" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-four" />
 		      <label for="amount-four">4-5</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="amount" type="radio" id="amount-hella" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-hella" />
 		      <label for="amount-hella">5+</label>
 		    </p>
 			</div>
