@@ -110,19 +110,19 @@
 			<div class="input-block">
 				<p>What do you have your fruit as?</p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="snack"/>
+		      <input type="checkbox" class="filled-in" id="snack" name="as[]" value="As a snack" />
 		      <label for="snack">As a snack</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="breakfast"/>
+		      <input type="checkbox" class="filled-in" id="breakfast" name="as[]" value="I have a fruit with my breakfast" />
 		      <label for="breakfast">I have a fruit with my breakfast</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="lunch"/>
+		      <input type="checkbox" class="filled-in" id="lunch" name="as[]" value="I have a fruit with my lunch" />
 		      <label for="lunch">I have a fruit with my lunch</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="dessert"/>
+		      <input type="checkbox" class="filled-in" id="dessert" name="as[]" value="I have a fruit as dessert" />
 		      <label for="dessert">I have a fruit as dessert</label>
 		    </p>
 			</div>
@@ -130,23 +130,23 @@
 			<div class="input-block">
 				<p>How often do you visit stores to purchase fruits in a week?</p>
 				<p>
-		      <input class="with-gap" name="often" type="radio" id="often-less" />
+		      <input class="with-gap" name="frequency" type="radio" id="often-less" value="Less than once a week" />
 		      <label for="often-less">Less than once a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="often" type="radio" id="often-once" />
+		      <input class="with-gap" name="frequency" type="radio" id="often-once" value="Once a week" />
 		      <label for="often-once">Once a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="often" type="radio" id="often-twice" />
+		      <input class="with-gap" name="frequency" type="radio" id="often-twice" value="Twice a week" />
 		      <label for="often-twice">Twice a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="often" type="radio" id="often-thrice" />
+		      <input class="with-gap" name="frequency" type="radio" id="often-thrice" value="3 times a week" />
 		      <label for="often-thrice">3 times a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="often" type="radio" id="often-hella" />
+		      <input class="with-gap" name="frequency" type="radio" id="often-hella" value="4 or more times a week" />
 		      <label for="often-hella">4 or more times a week</label>
 		    </p>
 			</div>
@@ -154,60 +154,60 @@
 			<div class="input-block">
 				<p>On average, how much do you spend on fruits per week?</p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-5" />
+		      <input class="with-gap" name="spend" type="radio" id="spend-5" value="$0-5" />
 		      <label for="spend-5">$0-5</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-10" />
+		      <input class="with-gap" name="spend" type="radio" id="spend-10" value="$6-10" />
 		      <label for="spend-10">$6-10</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-15" />
+		      <input class="with-gap" name="spend" type="radio" id="spend-15" value="$11-15" />
 		      <label for="spend-15">$11-15</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-20" />
+		      <input class="with-gap" name="spend" type="radio" id="spend-20" value="$16-20" />
 		      <label for="spend-20">$16-20</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-25" />
+		      <input class="with-gap" name="spend" type="radio" id="spend-25" value="$21-25" />
 		      <label for="spend-25">$21-25</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-30" />
+		      <input class="with-gap" name="spend" type="radio" id="spend-30" value="$26-30" />
 		      <label for="spend-30">$26-30</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-hella" />
+		      <input class="with-gap" name="spend" type="radio" id="spend-hella" value="$30+" />
 		      <label for="spend-hella">$30+</label>
 		    </p>
 			</div>
 
 			<div class="input-block input-field">
-        <input id="where" type="text">
+        <input id="where" type="text" name="store">
         <label for="where">Where do you buy your fruits from?</label>
       </div>
 
 			<div class="input-block">
 				<p>Why do you purchase fruit?</p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="fresh"/>
+		      <input type="checkbox" class="filled-in" id="fresh" name="reason[]" value="To eat fresh" />
 		      <label for="fresh">To eat fresh</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="freeze"/>
+		      <input type="checkbox" class="filled-in" id="freeze" name="reason[]" value="To freeze or later use" />
 		      <label for="freeze">To freeze or later use</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="cooking"/>
+		      <input type="checkbox" class="filled-in" id="cooking" name="reason[]" value="For cooking" />
 		      <label for="cooking">For cooking</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="facemasks"/>
+		      <input type="checkbox" class="filled-in" id="facemasks" name="reason[]" value="To create face masks" />
 		      <label for="facemasks">To create face masks</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="health"/>
+		      <input type="checkbox" class="filled-in" id="health" name="reason[]" value="To be healthy" />
 		      <label for="health">To be healthy</label>
 		    </p>
 			</div>
@@ -215,27 +215,27 @@
 			<div class="input-block">
 				<p>What’s the most important thing you consider when buying fruits?</p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="price"/>
+		      <input type="checkbox" class="filled-in" id="price" name="important[]" value="Price" />
 		      <label for="price">Price</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="brand"/>
+		      <input type="checkbox" class="filled-in" id="brand" name="important[]" value="Brand" />
 		      <label for="brand">Brand</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="date"/>
+		      <input type="checkbox" class="filled-in" id="date" name="important[]" value="Expiration date" />
 		      <label for="date">Expiration date</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="nutrient"/>
+		      <input type="checkbox" class="filled-in" id="nutrient" name="important[]" value="Nutrient needs" />
 		      <label for="nutrient">Nutrient needs</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="condition"/>
+		      <input type="checkbox" class="filled-in" id="condition" name="important[]" value="Condition of fruit" />
 		      <label for="condition">Condition of fruit</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="like"/>
+		      <input type="checkbox" class="filled-in" id="like" name="important[]" value="I like the fruit" />
 		      <label for="like">I like the fruit</label>
 		    </p>
 			</div>
@@ -243,23 +243,23 @@
 			<div class="input-block">
 				<p>Please select the things that make it difficult for you to buy fruits:</p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="difficult-condition"/>
+		      <input type="checkbox" class="filled-in" id="difficult-condition" name="difficult[]" value="Condition of fruit" />
 		      <label for="difficult-condition">Condition of fruit</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="difficult-price"/>
+		      <input type="checkbox" class="filled-in" id="difficult-price" name="difficult[]" value="Price" />
 		      <label for="difficult-price">Price</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="difficult-where"/>
+		      <input type="checkbox" class="filled-in" id="difficult-where" name="difficult[]" value="Not sure where to buy fruits" />
 		      <label for="difficult-where">Not sure where to buy fruits</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="difficult-quality"/>
+		      <input type="checkbox" class="filled-in" id="difficult-quality" name="difficult[]" value="The quality" />
 		      <label for="difficult-quality">The quality</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="difficult-availability"/>
+		      <input type="checkbox" class="filled-in" id="difficult-availability" name="difficult[]" value="Not available where I am" />
 		      <label for="difficult-availability">Not available where I am</label>
 		    </p>
 			</div>
@@ -267,17 +267,17 @@
 			<div class="input-block">
 				<p>Do you drink fruit juice/smoothies?</p>
 				<p>
-		      <input class="with-gap" name="smoothies" type="radio" id="smoothies-yes" />
+		      <input class="with-gap" name="drink" type="radio" id="smoothies-yes" value="Yes" />
 		      <label for="smoothies-yes">Yes</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="smoothies" type="radio" id="smoothies-no" />
+		      <input class="with-gap" name="drink" type="radio" id="smoothies-no" value="No" />
 		      <label for="smoothies-no">No</label>
 		    </p>
 			</div>
 
 			<div class="input-block input-field">
-        <input id="ingredients" type="text">
+        <input id="ingredients" type="text" name="ingredients">
         <label for="ingredients">What ingredients do you add in your smoothie?</label>
       </div>
 
@@ -286,11 +286,11 @@
 				the risk of many disease, including heart disease, high blood pressure, and
 				some cancers”</p>
 				<p>
-		      <input class="with-gap" name="reduce-risk" type="radio" id="reduce-risk-yes" />
+		      <input class="with-gap" name="agree" type="radio" id="reduce-risk-yes" value="Yes" />
 		      <label for="reduce-risk-yes">Yes</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="reduce-risk" type="radio" id="reduce-risk-no" />
+		      <input class="with-gap" name="agree" type="radio" id="reduce-risk-no" value="No" />
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>

@@ -23,24 +23,28 @@ if(isset($_POST['submit'])){
 
 
 
-	// foreach ($_POST['as'] as $fruit_as) {
-	// 	$fruit_as .= $fruit_as.",";
-	// }
+	foreach ($_POST['as'] as $fruit_as) {
+		$fruit_as .= $fruit_as.",";
+	}
 
-	// foreach ($_POST['reason'] as $fruit_reason) {
-	// 	$fruit_reason .= $fruit_reason.",";
-	// }
+	foreach ($_POST['reason'] as $fruit_reason) {
+		$fruit_reason .= $fruit_reason.",";
+	}
 
-	// foreach ($_POST['important'] as $fruit_important) {
-	// 	$fruit_important .= $fruit_important.",";
-	// }
+	foreach ($_POST['important'] as $fruit_important) {
+		$fruit_important .= $fruit_important.",";
+	}
 
-	// foreach ($_POST['difficult'] as $fruit_difficult) {
-	// 	$fruit_difficult .= $fruit_difficult.",";
-	// }
+	foreach ($_POST['difficult'] as $fruit_difficult) {
+		$fruit_difficult .= $fruit_difficult.",";
+	}
 
 }
 	$_POST['buy'] = implode(", ", $_POST['buy']);
+	$_POST['as'] = implode(", ", $_POST['as']);
+	$_POST['reason'] = implode(", ", $_POST['reason']);
+	$_POST['important'] = implode(", ", $_POST['important']);
+	$_POST['difficult'] = implode(", ", $_POST['difficult']);
 
 	$firstName = Trim(stripslashes($_POST['first']));
 	$lastName = Trim(stripslashes($_POST['last']));
