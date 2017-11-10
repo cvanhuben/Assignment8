@@ -4,61 +4,229 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta content="Queens Survey" name="description">
 	<meta content="Queens" name="author">
 	<link rel="icon" href="images/icon.png">
 	<title>Queens Survey</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap core CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
-	<link href="css/overrides.css" rel="stylesheet"><!-- Overrides -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
 <body>
 
 	<nav>
-		<div id="my-nav" class="row fixed-top">
-	    <button id="brand-flag" class="navbar-toggler">Home</button>
-				<div>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link selected" href="#">link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">link</a>
-						</li>
-				</ul>
-			</div>
-		</div>
+    <ul>
+			<li >
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">Admin Log In</a>
+			</li>
+		</ul>
   </nav>
 
+	<div class="container">
+		<h1>Queens Survey</h1>
 
-	<section class="panel">
-		<div class="container">
-			<div class="row">
-	      <div class="col">
-	  			<h1>Queens Survey</h1>
-	  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in
-						lectus neque. Curabitur ullamcorper lacinia ante vel volutpat.
-						Morbi porttitor quam vel sapien vehicula vehicula. Phasellus ac
-						porta nulla. Donec volutpat tempor tellus sed laoreet. Etiam in
-						metus leo. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-	      </div>
+		<form>
+			<div class="input-block input-field">
+        <input id="first-name" type="text">
+        <label for="first-name">First name</label>
+      </div>
+
+			<div class="input-block input-field">
+        <input id="last-name" type="text">
+        <label for="last-name">Last name</label>
+      </div>
+
+			<div class="input-block input-field">
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+
+			<div class="input-block">
+				<p>Do you eat fruits everyday?</p>
+				<p>
+		      <input class="with-gap" name="daily" type="radio" id="daily-yes" />
+		      <label for="daily-yes">Yes</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="daily" type="radio" id="daily-no" />
+		      <label for="daily-no">No</label>
+		    </p>
 			</div>
-		</div>
-	</section>
 
-	<!-- Core JavaScript placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+			<div class="input-block">
+				<p>Approximately how many fruits do you eat per day?</p>
+				<p>
+		      <input class="with-gap" name="amount" type="radio" id="amount-yikes" />
+		      <label for="amount-yikes">1 or less</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="amount" type="radio" id="amount-few" />
+		      <label for="amount-few">2-3</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="amount" type="radio" id="amount-four" />
+		      <label for="amount-four">4-5</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="amount" type="radio" id="amount-hella" />
+		      <label for="amount-hella">5+</label>
+		    </p>
+			</div>
+
+			<div class="input-block">
+				<p>What fruits do you usually eat/buy?</p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="apple"/>
+		      <label for="apple">Apple</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="banana"/>
+		      <label for="banana">Banana</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="blueberry"/>
+		      <label for="blueberry">Blueberry</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="grape"/>
+		      <label for="grape">Grape</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="cherry"/>
+		      <label for="cherry">Cherry</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="orange"/>
+		      <label for="orange">Orange</label>
+		    </p>
+			</div>
+
+			<div class="input-block">
+				<p>What do you have your fruit as?</p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="snack"/>
+		      <label for="snack">As a snack</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="breakfast"/>
+		      <label for="breakfast">I have a fruit with my breakfast</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="lunch"/>
+		      <label for="lunch">I have a fruit with my lunch</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="dessert"/>
+		      <label for="dessert">I have a fruit as dessert</label>
+		    </p>
+			</div>
+
+			<div class="input-block">
+				<p>How often do you visit stores to purchase fruits in a week?</p>
+				<p>
+		      <input class="with-gap" name="often" type="radio" id="often-less" />
+		      <label for="often-less">Less than once a week</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="often" type="radio" id="often-once" />
+		      <label for="often-once">Once a week</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="often" type="radio" id="often-twice" />
+		      <label for="often-twice">Twice a week</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="often" type="radio" id="often-thrice" />
+		      <label for="often-thrice">3 times a week</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="often" type="radio" id="often-hella" />
+		      <label for="often-hella">4 or more times a week</label>
+		    </p>
+			</div>
+
+			<div class="input-block">
+				<p>On average, how much do you spend on fruits per week?</p>
+				<p>
+		      <input class="with-gap" name="spend" type="radio" id="spend-5" />
+		      <label for="spend-5">$0-5</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="spend" type="radio" id="spend-10" />
+		      <label for="spend-10">$6-10</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="spend" type="radio" id="spend-15" />
+		      <label for="spend-15">$11-15</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="spend" type="radio" id="spend-20" />
+		      <label for="spend-20">$16-20</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="spend" type="radio" id="spend-25" />
+		      <label for="spend-25">$21-25</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="spend" type="radio" id="spend-30" />
+		      <label for="spend-30">$26-30</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="spend" type="radio" id="spend-hella" />
+		      <label for="spend-hella">$30+</label>
+		    </p>
+			</div>
+
+			<div class="input-block input-field">
+        <input id="where" type="text">
+        <label for="where">Where do you buy your fruits from?</label>
+      </div>
+
+			<div class="input-block">
+				<p>Do you drink fruit juice/smoothies?</p>
+				<p>
+		      <input class="with-gap" name="smoothies" type="radio" id="smoothies-yes" />
+		      <label for="smoothies-yes">Yes</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="smoothies" type="radio" id="smoothies-no" />
+		      <label for="smoothies-no">No</label>
+		    </p>
+			</div>
+
+			<div class="input-block input-field">
+        <input id="ingredients" type="text">
+        <label for="ingredients">What ingredients do you add in your smoothie?</label>
+      </div>
+
+			<div class="input-block">
+		 		<p>Do you agree with this statement “Eating plenty of fruits may help reduce
+				the risk of many disease, including heart disease, high blood pressure, and
+				some cancers”</p>
+				<p>
+		      <input class="with-gap" name="reduce-risk" type="radio" id="reduce-risk-yes" />
+		      <label for="reduce-risk-yes">Yes</label>
+		    </p>
+				<p>
+		      <input class="with-gap" name="reduce-risk" type="radio" id="reduce-risk-no" />
+		      <label for="reduce-risk-no">No</label>
+		    </p>
+			</div>
+
+			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+		    <i class="material-icons right">send</i>
+		  </button>
+
+		</form>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 
 </body>
 </html>
