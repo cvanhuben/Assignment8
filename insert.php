@@ -12,26 +12,35 @@
 	// iterate through check boxes to make one long string
 	// https://stackoverflow.com/questions/26014920/multiple-values-into-mysql-from-checkbox
 
+	
+	
+if(isset($_POST['submit'])){
 	foreach ($_POST['buy'] as $fruit_buy) {
+		
 		$fruit_buy .= $fruit_buy.",";
+
 	}
 
-	foreach ($_POST['as'] as $fruit_as) {
-		$fruit_as .= $fruit_as.",";
-	}
 
-	foreach ($_POST['reason'] as $fruit_reason) {
-		$fruit_reason .= $fruit_reason.",";
-	}
 
-	foreach ($_POST['important'] as $fruit_important) {
-		$fruit_important .= $fruit_important.",";
-	}
+	// foreach ($_POST['as'] as $fruit_as) {
+	// 	$fruit_as .= $fruit_as.",";
+	// }
 
-	foreach ($_POST['difficult'] as $fruit_difficult) {
-		$fruit_difficult .= $fruit_difficult.",";
-	}
+	// foreach ($_POST['reason'] as $fruit_reason) {
+	// 	$fruit_reason .= $fruit_reason.",";
+	// }
 
+	// foreach ($_POST['important'] as $fruit_important) {
+	// 	$fruit_important .= $fruit_important.",";
+	// }
+
+	// foreach ($_POST['difficult'] as $fruit_difficult) {
+	// 	$fruit_difficult .= $fruit_difficult.",";
+	// }
+
+}
+	$_POST['buy'] = implode(", ", $_POST['buy']);
 
 	$firstName = Trim(stripslashes($_POST['first']));
 	$lastName = Trim(stripslashes($_POST['last']));

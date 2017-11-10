@@ -50,11 +50,11 @@
 			<div class="input-block">
 				<p>Do you eat fruits everyday?</p>
 				<p>
-		      <input class="with-gap" name="everyday" type="radio" id="daily-yes" />
+		      <input class="with-gap" name="everyday" type="radio" id="daily-yes" value="Yes" />
 		      <label for="daily-yes">Yes</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="everyday" type="radio" id="daily-no" />
+		      <input class="with-gap" name="everyday" type="radio" id="daily-no" value="No"/>
 		      <label for="daily-no">No</label>
 		    </p>
 			</div>
@@ -62,19 +62,19 @@
 			<div class="input-block">
 				<p>Approximately how many fruits do you eat per day?</p>
 				<p>
-		      <input class="with-gap" name="per_day" type="radio" id="amount-yikes" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-yikes" value="1 or less" />
 		      <label for="amount-yikes">1 or less</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="per_day" type="radio" id="amount-few" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-few" value="2-3" />
 		      <label for="amount-few">2-3</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="per_day" type="radio" id="amount-four" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-four" value="4-5" />
 		      <label for="amount-four">4-5</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="per_day" type="radio" id="amount-hella" />
+		      <input class="with-gap" name="per_day" type="radio" id="amount-hella" value="5+" />
 		      <label for="amount-hella">5+</label>
 		    </p>
 			</div>
@@ -82,27 +82,27 @@
 			<div class="input-block">
 				<p>What fruits do you usually eat/buy?</p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="apple"/>
+		      <input type="checkbox" class="filled-in" id="apple" name= "buy[]" value="apple" />
 		      <label for="apple">Apple</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="banana"/>
+		      <input type="checkbox" class="filled-in" id="banana" name= "buy[]" value="banana" />
 		      <label for="banana">Banana</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="blueberry"/>
+		      <input type="checkbox" class="filled-in" id="blueberry" name= "buy[]" value="blueberry" />
 		      <label for="blueberry">Blueberry</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="grape"/>
+		      <input type="checkbox" class="filled-in" id="grape" name= "buy[]" value="grape" />
 		      <label for="grape">Grape</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="cherry"/>
+		      <input type="checkbox" class="filled-in" id="cherry" name= "buy[]" value="cherry" />
 		      <label for="cherry">Cherry</label>
 		    </p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="orange"/>
+		      <input type="checkbox" class="filled-in" id="orange" name= "buy[]" value="orange" />
 		      <label for="orange">Orange</label>
 		    </p>
 			</div>
