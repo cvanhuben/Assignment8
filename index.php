@@ -30,30 +30,31 @@
 	<div class="container">
 		<h1>Queens Survey</h1>
 
-		<form>
+		<form method="post" action="insert.php">
+
 			<div class="input-block input-field">
-        <input id="first-name" type="text">
+        <input id="first-name" type="text" name= "first">
         <label for="first-name">First name</label>
       </div>
 
 			<div class="input-block input-field">
-        <input id="last-name" type="text">
+        <input id="last-name" type="text" name = "last">
         <label for="last-name">Last name</label>
       </div>
 
 			<div class="input-block input-field">
-        <input id="email" type="email" class="validate">
+        <input id="email" type="email" name = "email" class="validate">
         <label for="email">Email</label>
       </div>
 
 			<div class="input-block">
 				<p>Do you eat fruits everyday?</p>
 				<p>
-		      <input class="with-gap" name="daily" type="radio" id="daily-yes" />
+		      <input class="with-gap" name="everyday" type="radio" id="daily-yes" />
 		      <label for="daily-yes">Yes</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="daily" type="radio" id="daily-no" />
+		      <input class="with-gap" name="everyday" type="radio" id="daily-no" />
 		      <label for="daily-no">No</label>
 		    </p>
 			</div>
