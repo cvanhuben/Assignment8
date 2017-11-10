@@ -36,19 +36,19 @@
 	// Escape all strings
 	$firstName = mysqli_real_escape_string($connection, $firstName);
 	$lastName = mysqli_real_escape_string($connection, $lastName);
-	$email = mysqli_real_escape_string($connection, $lastName);
-	$fruit_everyday = mysqli_real_escape_string($connection, $lastName);
-	$fruit_per_day = mysqli_real_escape_string($connection, $lastName);
-	$fruit_buy = mysqli_real_escape_string($connection, $lastName);
-	$fruit_as = mysqli_real_escape_string($connection, $lastName);
-	$fruit_frequency = mysqli_real_escape_string($connection, $lastName);
-	$fruit_spend = mysqli_real_escape_string($connection, $lastName);
-	$fruit_store = mysqli_real_escape_string($connection, $lastName);
-	$fruit_reason = mysqli_real_escape_string($connection, $lastName);
-	$fruit_difficult = mysqli_real_escape_string($connection, $lastName);
-	$fruit_drink = mysqli_real_escape_string($connection, $lastName);
-	$fruit_ingredients = mysqli_real_escape_string($connection, $lastName);
-	$fruit_agree = mysqli_real_escape_string($connection, $lastName);
+	$email = mysqli_real_escape_string($connection, $email);
+	$fruit_everyday = mysqli_real_escape_string($connection, $fruit_everyday);
+	$fruit_per_day = mysqli_real_escape_string($connection, $fruit_per_day);
+	$fruit_buy = mysqli_real_escape_string($connection, $fruit_buy);
+	$fruit_as = mysqli_real_escape_string($connection, $fruit_as);
+	$fruit_frequency = mysqli_real_escape_string($connection, $fruit_frequency);
+	$fruit_spend = mysqli_real_escape_string($connection, $fruit_spend);
+	$fruit_store = mysqli_real_escape_string($connection, $fruit_store);
+	$fruit_reason = mysqli_real_escape_string($connection, $fruit_reason);
+	$fruit_difficult = mysqli_real_escape_string($connection, $fruit_difficult);
+	$fruit_drink = mysqli_real_escape_string($connection, $fruit_drink);
+	$fruit_ingredients = mysqli_real_escape_string($connection, $fruit_ingredients);
+	$fruit_agree = mysqli_real_escape_string($connection, $fruit_agree);
 
 
 
