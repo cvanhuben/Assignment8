@@ -22,6 +22,10 @@ if(isset($_POST['submit'])){
 	}
 
 }
+if(isset($_POST['submit'])){
+	foreach ($_POST['important'] as $fruit_important) {
+		$fruit_important .= $fruit_important.",";
+	}
 
 if(isset($_POST['submit'])){
 
@@ -36,21 +40,18 @@ if(isset($_POST['submit'])){
 		$fruit_reason .= $fruit_reason.",";
 	}
 }
-if(isset($_POST['submit'])){
-	foreach ($_POST['important'] as $fruit_important) {
-		$fruit_important .= $fruit_important.",";
-	}
+
 }
 if(isset($_POST['submit'])){
 	foreach ($_POST['difficult'] as $fruit_difficult) {
 		$fruit_difficult .= $fruit_difficult.",";
 	}
 }
-
+	$_POST['important'] = implode(", ", $_POST['important']);
 	$_POST['buy'] = implode(", ", $_POST['buy']);
 	$_POST['as'] = implode(", ", $_POST['as']);
 	$_POST['reason'] = implode(", ", $_POST['reason']);
-	$_POST['important'] = implode(", ", $_POST['important']);
+
 	$_POST['difficult'] = implode(", ", $_POST['difficult']);
 
 	$firstName = Trim(stripslashes($_POST['first']));
@@ -83,6 +84,7 @@ if(isset($_POST['submit'])){
 	$fruit_spend = mysqli_real_escape_string($connection, $fruit_spend);
 	$fruit_store = mysqli_real_escape_string($connection, $fruit_store);
 	$fruit_reason = mysqli_real_escape_string($connection, $fruit_reason);
+	$fruit_important = mysqli_real_escape_string($connection, $fruit_important);
 	$fruit_difficult = mysqli_real_escape_string($connection, $fruit_difficult);
 	$fruit_drink = mysqli_real_escape_string($connection, $fruit_drink);
 	$fruit_ingredients = mysqli_real_escape_string($connection, $fruit_ingredients);
@@ -92,10 +94,10 @@ if(isset($_POST['submit'])){
 	// 2. Perform database query
 	$query  = "INSERT INTO form (";
 	$query .= "first_name, last_name, email, fruit_everyday, fruit_per_day, fruit_buy, fruit_as, fruit_frequency, fruit_spend, fruit_store
-	, fruit_reason, fruit_difficult, fruit_drink, fruit_ingredients, fruit_agree";
+	, fruit_reason, fruit_important, fruit_difficult, fruit_drink, fruit_ingredients, fruit_agree";
 	$query .= ") VALUES (";
 	$query .= "  '{$firstName}', '{$lastName}', '{$email}', '{$fruit_everyday}', '{$fruit_per_day}', '{$fruit_buy
-	}', '{$fruit_as}', '{$fruit_frequency}', '{$fruit_spend}', '{$fruit_store}', '{$fruit_reason}', '{$fruit_difficult}', '{$fruit_drink}', '{$fruit_ingredients}', '{$fruit_agree}'";
+	}', '{$fruit_as}', '{$fruit_frequency}', '{$fruit_spend}', '{$fruit_store}', '{$fruit_reason}', '{$fruit_important}', '{$fruit_difficult}', '{$fruit_drink}', '{$fruit_ingredients}', '{$fruit_agree}'";
 	$query .= ")";
 
 	$result = mysqli_query($connection, $query);
@@ -104,6 +106,16 @@ if(isset($_POST['submit'])){
 	mysqli_close($connection);
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>insert.php</title>
+</head>
+<body>
 
+	<a href="index.php">Back to Form</a>
+
+</body>
+</html>
 
 

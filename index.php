@@ -215,7 +215,7 @@
 			<div class="input-block">
 				<p>What’s the most important thing you consider when buying fruits?</p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="price" name="important[]" value="Price" />
+		      <input type="checkbox" class="filled-in" id="price" name= important[] value="Price" />
 		      <label for="price">Price</label>
 		    </p>
 				<p>
