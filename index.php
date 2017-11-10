@@ -188,6 +188,82 @@
       </div>
 
 			<div class="input-block">
+				<p>Why do you purchase fruit?</p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="fresh"/>
+		      <label for="fresh">To eat fresh</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="freeze"/>
+		      <label for="freeze">To freeze or later use</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="cooking"/>
+		      <label for="cooking">For cooking</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="facemasks"/>
+		      <label for="facemasks">To create face masks</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="health"/>
+		      <label for="health">To be healthy</label>
+		    </p>
+			</div>
+
+			<div class="input-block">
+				<p>What’s the most important thing you consider when buying fruits?</p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="price"/>
+		      <label for="price">Price</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="brand"/>
+		      <label for="brand">Brand</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="date"/>
+		      <label for="date">Expiration date</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="nutrient"/>
+		      <label for="nutrient">Nutrient needs</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="condition"/>
+		      <label for="condition">Condition of fruit</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="like"/>
+		      <label for="like">I like the fruit</label>
+		    </p>
+			</div>
+
+			<div class="input-block">
+				<p>Please select the things that make it difficult for you to buy fruits:</p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="difficult-condition"/>
+		      <label for="difficult-condition">Condition of fruit</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="difficult-price"/>
+		      <label for="difficult-price">Price</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="difficult-where"/>
+		      <label for="difficult-where">Not sure where to buy fruits</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="difficult-quality"/>
+		      <label for="difficult-quality">The quality</label>
+		    </p>
+				<p>
+		      <input type="checkbox" class="filled-in" id="difficult-availability"/>
+		      <label for="difficult-availability">Not available where I am</label>
+		    </p>
+			</div>
+
+			<div class="input-block">
 				<p>Do you drink fruit juice/smoothies?</p>
 				<p>
 		      <input class="with-gap" name="smoothies" type="radio" id="smoothies-yes" />
