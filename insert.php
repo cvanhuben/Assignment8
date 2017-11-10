@@ -33,7 +33,32 @@
 
 ?>
 
+<!doctype html>
+<html>
+<head>
+	<title>Test Page</title>
+</head>
+<body>
 
+	
+
+<?php
+	if ($result) {
+		echo "Success! - the query didn't error-out";
+
+?>
+
+
+<?php
+
+	} else {
+		die("Database query failed.");
+	}
+?>
+
+
+</body>
+</html>
 
 
 <?php
