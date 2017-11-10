@@ -13,6 +13,22 @@
 
 	$firstName = Trim(stripslashes($_POST['first']));
 	$lastName = Trim(stripslashes($_POST['last']));
+	$email = Trim(stripslashes($_POST['email']));
+	$fruit_everyday = Trim(stripslashes($_POST['everyday']));
+	$fruit_per_day= Trim(stripslashes($_POST['per_day']));
+	$fruit_buy= Trim(stripslashes($_POST['buy']));
+	$fruit_as= Trim(stripslashes($_POST['as']));
+	$fruit_frequency= Trim(stripslashes($_POST['frequency']));
+	$fruit_spend= Trim(stripslashes($_POST['spend']));
+	$fruit_store= Trim(stripslashes($_POST['store']));
+	$fruit_reason= Trim(stripslashes($_POST['reason']));
+	$fruit_important= Trim(stripslashes($_POST['important']));
+	$fruit_difficult= Trim(stripslashes($_POST['difficult']));
+	$fruit_drink= Trim(stripslashes($_POST['drink']));
+	$fruit_ingredients= Trim(stripslashes($_POST['ingredients']));
+	$fruit_agree= Trim(stripslashes($_POST['agree']));
+
+
 
 
 
@@ -20,6 +36,19 @@
 	// Escape all strings
 	$firstName = mysqli_real_escape_string($connection, $firstName);
 	$lastName = mysqli_real_escape_string($connection, $lastName);
+	$email = mysqli_real_escape_string($connection, $lastName);
+	$fruit_everyday = mysqli_real_escape_string($connection, $lastName);
+	$fruit_per_day = mysqli_real_escape_string($connection, $lastName);
+	$fruit_buy = mysqli_real_escape_string($connection, $lastName);
+	$fruit_as = mysqli_real_escape_string($connection, $lastName);
+	$fruit_frequency = mysqli_real_escape_string($connection, $lastName);
+	$fruit_spend = mysqli_real_escape_string($connection, $lastName);
+	$fruit_store = mysqli_real_escape_string($connection, $lastName);
+	$fruit_reason = mysqli_real_escape_string($connection, $lastName);
+	$fruit_difficult = mysqli_real_escape_string($connection, $lastName);
+	$fruit_drink = mysqli_real_escape_string($connection, $lastName);
+	$fruit_ingredients = mysqli_real_escape_string($connection, $lastName);
+	$fruit_agree = mysqli_real_escape_string($connection, $lastName);
 
 
 
