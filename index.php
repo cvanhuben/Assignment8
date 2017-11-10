@@ -130,23 +130,23 @@
 			<div class="input-block">
 				<p>How often do you visit stores to purchase fruits in a week?</p>
 				<p>
-		      <input class="with-gap" name="frequency" type="radio" id="often-less" value="Less than once a week" />
+		      <input class="with-gap" type="radio" id="often-less" name="frequency" value="Less than once a week" />
 		      <label for="often-less">Less than once a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="frequency" type="radio" id="often-once" value="Once a week" />
+		      <input class="with-gap" type="radio" id="often-once" name="frequency" value="Once a week" />
 		      <label for="often-once">Once a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="frequency" type="radio" id="often-twice" value="Twice a week" />
+		      <input class="with-gap" type="radio" id="often-twice" name="frequency" value="Twice a week" />
 		      <label for="often-twice">Twice a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="frequency" type="radio" id="often-thrice" value="3 times a week" />
+		      <input class="with-gap" type="radio" id="often-thrice" name="frequency" value="3 times a week" />
 		      <label for="often-thrice">3 times a week</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="frequency" type="radio" id="often-hella" value="4 or more times a week" />
+		      <input class="with-gap" type="radio" id="often-hella" name="frequency" value="4 or more times a week" />
 		      <label for="often-hella">4 or more times a week</label>
 		    </p>
 			</div>
@@ -154,31 +154,31 @@
 			<div class="input-block">
 				<p>On average, how much do you spend on fruits per week?</p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-5" value="$0-5" />
+		      <input class="with-gap" type="radio" id="spend-5" name="spend" value="$0-5" />
 		      <label for="spend-5">$0-5</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-10" value="$6-10" />
+		      <input class="with-gap" type="radio" id="spend-10" name="spend" value="$6-10" />
 		      <label for="spend-10">$6-10</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-15" value="$11-15" />
+		      <input class="with-gap" type="radio" id="spend-15" name="spend" value="$11-15" />
 		      <label for="spend-15">$11-15</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-20" value="$16-20" />
+		      <input class="with-gap" type="radio" id="spend-20" name="spend" value="$16-20" />
 		      <label for="spend-20">$16-20</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-25" value="$21-25" />
+		      <input class="with-gap" type="radio" id="spend-25" name="spend" value="$21-25" />
 		      <label for="spend-25">$21-25</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-30" value="$26-30" />
+		      <input class="with-gap" type="radio" id="spend-30" name="spend" value="$26-30" />
 		      <label for="spend-30">$26-30</label>
 		    </p>
 				<p>
-		      <input class="with-gap" name="spend" type="radio" id="spend-hella" value="$30+" />
+		      <input class="with-gap" type="radio" id="spend-hella" name="spend" value="$30+" />
 		      <label for="spend-hella">$30+</label>
 		    </p>
 			</div>

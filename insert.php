@@ -21,25 +21,32 @@ if(isset($_POST['submit'])){
 
 	}
 
+}
 
+if(isset($_POST['submit'])){
 
 	foreach ($_POST['as'] as $fruit_as) {
 		$fruit_as .= $fruit_as.",";
 	}
+}
+
+if(isset($_POST['submit'])){
 
 	foreach ($_POST['reason'] as $fruit_reason) {
 		$fruit_reason .= $fruit_reason.",";
 	}
-
+}
+if(isset($_POST['submit'])){
 	foreach ($_POST['important'] as $fruit_important) {
 		$fruit_important .= $fruit_important.",";
 	}
-
+}
+if(isset($_POST['submit'])){
 	foreach ($_POST['difficult'] as $fruit_difficult) {
 		$fruit_difficult .= $fruit_difficult.",";
 	}
-
 }
+
 	$_POST['buy'] = implode(", ", $_POST['buy']);
 	$_POST['as'] = implode(", ", $_POST['as']);
 	$_POST['reason'] = implode(", ", $_POST['reason']);
@@ -98,16 +105,5 @@ if(isset($_POST['submit'])){
 
 ?>
 
-<!doctype html>
-<html>
-<head>
-	<title>Test Page</title>
-</head>
-<body>
 
-<a href ="index.php"></a>
-
-
-</body>
-</html>
 
