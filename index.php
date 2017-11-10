@@ -105,6 +105,18 @@
 		      <input type="checkbox" class="filled-in" id="orange" name= "buy[]" value="orange" />
 		      <label for="orange">Orange</label>
 		    </p>
+		    
+		    <!-- test -->
+		    <p>
+		    	<input type ="checkbox" class = "filled-in" id="other" />
+		    	<label for="other">Other</label>
+		    	<div class="input-block input-field">
+        		<input id="other" type="text" name= "buy[]">
+        		
+      			</div>
+			<!--  -->
+
+		    </p>
 			</div>
 
 			<div class="input-block">
