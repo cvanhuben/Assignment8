@@ -9,8 +9,6 @@
 
 	// Often these are form values in $_POST
 
-
-
 	$firstName = Trim(stripslashes($_POST['first']));
 	$lastName = Trim(stripslashes($_POST['last']));
 	$email = Trim(stripslashes($_POST['email']));
@@ -27,10 +25,6 @@
 	$fruit_drink= Trim(stripslashes($_POST['drink']));
 	$fruit_ingredients= Trim(stripslashes($_POST['ingredients']));
 	$fruit_agree= Trim(stripslashes($_POST['agree']));
-
-
-
-
 
 
 	// Escape all strings
@@ -51,12 +45,10 @@
 	$fruit_agree = mysqli_real_escape_string($connection, $fruit_agree);
 
 
-
-
-
 	// 2. Perform database query
 	$query  = "INSERT INTO form (";
-	$query .= "first_name, last_name";
+	$query .= "first_name, last_name, email, fruit_everyday, fruit_per_day, fruit_buy, fruit_as, fruit_frequency, fruit_spend, fruit_store
+	, fruit_reason, fruit_difficult, fruit_drink, fruit_ingredients, fruit_agree";
 	$query .= ") VALUES (";
 	$query .= "  '{$firstName}', '{$lastName}'";
 	$query .= ")";
