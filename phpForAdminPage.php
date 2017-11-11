@@ -20,7 +20,7 @@
 	
 
 ?>
-<?
+<?php
 //  Code to iterate through all the rows 
 
 // 3. Use returned data (if any)
@@ -29,9 +29,11 @@
 
 ?>
 
-<?
+<?php
 // This pulls the data and publishes it for each column
-php echo $pages["NAMEOFCOLUMN"]; 
+php echo $pages["first_name"]; 
+
+}
 
 ?>
 
