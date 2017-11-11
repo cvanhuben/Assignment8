@@ -35,7 +35,7 @@
 		<h2>Please answer this survey as honestly as possible, based on your average
 			eating and buying habits.</h2>
 
-		<form method="post" action="insert.php">
+		<form id="survey" method="post" action="insert.php">
 
 			<div class="input-block input-field">
         <input id="first-name" type="text" name= "first">
@@ -312,7 +312,7 @@
 		    </p>
 			</div>
 
-			<button class="btn disabled waves-effect waves-light" type="submit" name="action">Submit
+			<button id="submit" class="btn disabled waves-effect waves-light" type="submit" name="action">Submit
 		    <i class="material-icons right">send</i>
 		  </button>
 
@@ -322,6 +322,7 @@
 	<footer>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/interactions.js"></script>
 	</footer>
 
 </body>
