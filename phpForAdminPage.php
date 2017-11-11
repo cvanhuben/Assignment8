@@ -84,7 +84,18 @@
 
 
 	</table>
+<br>
 
+
+	<form method="post" action="deleteScript.php">
+		<div>
+			
+			<label for="id">Enter ID to Delete: </label>
+			<input type="text" name="id">
+		</div>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
 </body>
 </html>
 
