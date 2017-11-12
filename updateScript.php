@@ -80,81 +80,166 @@
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+	//buy
+
+	if(!empty($_POST['buy'])){
+	foreach ($_POST['buy'] as $buy) {
+		
+		$buy .= $buy.",";
+	}
+	$_POST['buy'] = implode(", ", $_POST['buy']);
+	$buy = Trim(stripslashes($_POST['buy']));
+	$buy = mysqli_real_escape_string($connection, $buy);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_buy = '$buy'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+	// as
+
+	if(!empty($_POST['as'])){
+
+		foreach ($_POST['as'] as $as) {
+		$as .= $as.",";
+	}
+
+	$_POST['as'] = implode(", ", $_POST['as']);
+	$as = Trim(stripslashes($_POST['as']));
+	$as = mysqli_real_escape_string($connection, $as);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_as = '$as'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+	// fruit frequency
+
+	if(!empty($_POST['frequency'])){
+	$frequency = Trim(stripslashes($_POST['frequency']));
+	$frequency = mysqli_real_escape_string($connection, $frequency);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_frequency = '$frequency'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+// spend
+
+	if(!empty($_POST['spend'])){
+	$spend = Trim(stripslashes($_POST['spend']));
+	$spend = mysqli_real_escape_string($connection, $spend);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_spend = '$spend'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+	// store
+
+	if(!empty($_POST['store'])){
+	$store = Trim(stripslashes($_POST['store']));
+	$store = mysqli_real_escape_string($connection, $store);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_store = '$store'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+// fruit reason
+	if(!empty($_POST['reason'])){
+	
+	foreach ($_POST['reason'] as $reason) {
+		$reason .= $reason.",";
+	}
+
+	$_POST['reason'] = implode(", ", $_POST['reason']);
+
+	$reason = Trim(stripslashes($_POST['reason']));
+	$reason = mysqli_real_escape_string($connection, $reason);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_reason = '$reason'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+	// important
+
+	if(!empty($_POST['important'])){
+	
+	foreach ($_POST['important'] as $important) {
+		$important .= $important.",";
+	}
+
+	$_POST['important'] = implode(", ", $_POST['important']);
+
+	$important = Trim(stripslashes($_POST['important']));
+	$important = mysqli_real_escape_string($connection, $important);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_important = '$important'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
 	}
 
-	if(!empty($_POST['first'])){
-	$first_name = Trim(stripslashes($_POST['first']));
-	$first_name = mysqli_real_escape_string($connection, $first_name);
+	// difficult
+
+	if(!empty($_POST['difficult'])){
+	
+	foreach ($_POST['difficult'] as $difficult) {
+		$difficult .= $difficult.",";
+	}
+
+
+	$_POST['difficult'] = implode(", ", $_POST['difficult']);
+
+
+	$difficult = Trim(stripslashes($_POST['difficult']));
+	$difficult = mysqli_real_escape_string($connection, $difficult);
 		$query = "UPDATE form SET
-		first_name = '$first_name'
+		fruit_difficult = '$difficult'
+		WHERE id = $id
+		";
+	$result = mysqli_query($connection, $query);
+	}
+
+	//drink
+	
+		if(!empty($_POST['drink'])){
+	$drink = Trim(stripslashes($_POST['drink']));
+	$drink = mysqli_real_escape_string($connection, $drink);
+		$query = "UPDATE form SET
+		fruit_drink = '$drink'
+		WHERE id = $id
+		";
+	$result = mysqli_query($connection, $query);
+	}
+
+	// ingredients
+
+
+		if(!empty($_POST['ingredients'])){
+	$ingredients = Trim(stripslashes($_POST['ingredients']));
+	$ingredients = mysqli_real_escape_string($connection, $ingredients);
+		$query = "UPDATE form SET
+		fruit_ingredients = '$ingredients'
+		WHERE id = $id
+		";
+	$result = mysqli_query($connection, $query);
+	}
+
+	// agree
+		if(!empty($_POST['agree'])){
+	$agree = Trim(stripslashes($_POST['agree']));
+	$agree = mysqli_real_escape_string($connection, $agree);
+		$query = "UPDATE form SET
+		fruit_agree = '$agree'
 		WHERE id = $id
 		";
 	$result = mysqli_query($connection, $query);
@@ -172,87 +257,37 @@
 ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
 <html>
 <head>
-	<title>testAdmin</title>
-	<style type="text/css">
-		td, th{
-			padding: 5px;
-		}
-
-
-	</style>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta content="Queens Survey" name="description">
+	<meta content="Queens" name="author">
+	<link rel="icon" href="images/icon.png">
+	<title>Update Script</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
+
 <body>
 
 	
-<h1>Now Updated</h1>
+<p>Record <?php echo $_SESSION['id']?> was updated</p>
 
-	<table border>
 
-<!-- <tr>
-			<th>id</th>			
-			<th>First Name</th>
-			<th>Last Name</th>
-			
-		</tr> -->
-<?php
-	// 3. Use returned data (if any)
+<a href="admin.php">Back to admin page</a>
 	
-	
-?>
-		<tr>
+	<?php 
+	mysqli_free_result($result);
 
-			<td><?php echo $pages["id"]; ?></td>
-			<td><?php echo $pages["first_name"]; ?></td>
-			<td><?php echo $pages["last_name"]; ?></td>
-			<td><?php echo $pages["email"]; ?></td>
-			<td><?php echo $pages["fruit_everyday"]; ?></td>
-			<td><?php echo $pages["fruit_per_day"]; ?></td>
-			<td><?php echo $pages["fruit_buy"]; ?></td>
-			<td><?php echo $pages["fruit_as"]; ?></td>
-			<td><?php echo $pages["fruit_frequency"]; ?></td>
-			<td><?php echo $pages["fruit_spend"]; ?></td>
-			<td><?php echo $pages["fruit_store"]; ?></td>
-			<td><?php echo $pages["fruit_reason"]; ?></td>
-			<td><?php echo $pages["fruit_important"]; ?></td>
-			<td><?php echo $pages["fruit_difficult"]; ?></td>
-			<td><?php echo $pages["fruit_drink"]; ?></td>
-			<td><?php echo $pages["fruit_ingredients"]; ?></td>
-			<td><?php echo $pages["fruit_agree"]; ?></td>
+	mysqli_close($connection); ?>
 
-
-
-
-
-
-		</tr>
-			
-
-
-	</table>
-	<?php mysqli_close($connection); ?>
+	<footer>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+	</footer>
 </body>
 </html>
