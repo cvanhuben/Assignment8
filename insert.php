@@ -122,7 +122,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 
-	<a href="index.php">Back to Form</a>
+	<a href="index.php">Back to Hompage</a>
 
 </body>
 </html>
