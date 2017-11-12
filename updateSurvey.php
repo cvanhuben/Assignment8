@@ -35,7 +35,7 @@ session_start();
 	<meta content="Queens Survey" name="description">
 	<meta content="Queens" name="author">
 	<link rel="icon" href="images/icon.png">
-	<title>Queens Survey</title>
+	<title>Queens Update Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
