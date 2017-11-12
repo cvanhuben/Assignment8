@@ -96,6 +96,18 @@
 		<br>
 		<input type="submit" value="Submit">
 	</form>
+
+	<br>
+
+	<form method="post" action="updateScript.php">
+		<div>
+			
+			<label for="id">Enter ID to Update: </label>
+			<input type="text" name="id">
+		</div>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
 </body>
 </html>
 
