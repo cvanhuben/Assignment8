@@ -99,7 +99,7 @@
 
 	<br>
 
-	<form method="post" action="updateScript.php">
+	<form method="post" action="updateSurvey.php">
 		<div>
 			
 			<label for="id">Enter ID to Update: </label>
