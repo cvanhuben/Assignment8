@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 	// 1. Create a database connection
 	$dbhost = "66.147.242.186";
 	$dbuser = "urcscon3_queens";
@@ -61,6 +63,9 @@
 			eating and buying habits.</h2>
 
 		<form id="survey" method="post" action="updateScript.php">
+
+		<?php $_SESSION["id"] = $pages["id"]; ?>
+
 
 			<div class="input-block input-field">
         <input id="first-name" type="text" name= "first">
@@ -337,7 +342,8 @@
 		    </p>
 			</div>
 
-			<button id="submit" class="btn disabled waves-effect waves-light" type="submit" name="action">Submit
+<!-- class="btn disabled waves-effect waves-light" -->
+			<button id="submit"  type="submit" name="action">Submit
 		    <i class="material-icons right">send</i>
 		  </button>
 

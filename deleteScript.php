@@ -33,7 +33,7 @@ if ($result) {
 
 ?>
 
-<a href="phpForAdminPage.php">Back to admin page</a>
+<a href="admin.php">Back to admin page</a>
 
 
 	</body>

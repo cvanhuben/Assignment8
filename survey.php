@@ -311,8 +311,8 @@
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
-
-			<button id="submit" class="btn disabled waves-effect waves-light" type="submit" name="action">Submit
+<!-- class="btn disabled waves-effect waves-light"  -->
+			<button id="submit" type="submit" name="action">Submit
 		    <i class="material-icons right">send</i>
 		  </button>
 
