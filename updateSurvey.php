@@ -350,7 +350,13 @@ session_start();
 
 		</form>
 	</div>
+<?php
+	// 4. Release returned data
+	mysqli_free_result($result);
 
+	// 5. Close database connection
+	mysqli_close($connection);
+?>
 	<footer>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
