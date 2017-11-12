@@ -10,6 +10,7 @@
 	<link rel="icon" href="images/icon.png">
 	<title>Queens Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
@@ -34,7 +35,7 @@
 	  <div class="container">
 	    <div class="row">
 	      <div class="col s12 white-text">
-	        <h1>Fruits</h1>
+	        <h1 id="header">Fruits</h1>
 	      </div>
 	    </div>
 	  </div>
