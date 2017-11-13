@@ -25,7 +25,7 @@
   </nav>
 
 	<div class="container">
-		<h1>Admin Page</h1>
+		<h1>Fruits</h1>
 
 <!-- This is to be used at the top of the file -->
 <?php
@@ -44,6 +44,22 @@
 
 	$result = mysqli_query($connection, $query);
 ?>
+
+		<form method="post" action="deleteScript.php">
+			<div>
+				<label for="id">Enter ID to Delete: </label>
+				<input type="text" name="id">
+			</div>
+			<input class="btn waves-effect waves-light right" type="submit" value="Delete">
+		</form>
+
+		<form method="post" action="updateSurvey.php">
+			<div>
+				<label for="id">Enter ID to Update: </label>
+				<input type="text" name="id">
+			</div>
+			<input class="btn waves-effect waves-light right" type="submit" value="Update">
+		</form>
 
 		<table class="bordered striped responsive-table">
 			<thead>
@@ -98,23 +114,6 @@
 
 			</tbody>
 		</table>
-
-		<form method="post" action="deleteScript.php">
-			<div>
-				<label for="id">Enter ID to Delete: </label>
-				<input type="text" name="id">
-			</div>
-			<input class="btn waves-effect waves-light" type="submit" value="Submit">
-		</form>
-
-		<form method="post" action="updateSurvey.php">
-			<div>
-				<label for="id">Enter ID to Update: </label>
-				<input type="text" name="id">
-			</div>
-			<input class="btn waves-effect waves-light" type="submit" value="Submit">
-		</form>
-
 	</div>
 
 <?php
@@ -127,7 +126,7 @@
 
 	<footer class="page-footer">
 		<div class="container">
-			<h4 class="white-text">Links</h4>
+			<h4 class="white-text">Sources</h4>
 			<ul>
 				<li>
 					<a class="grey-text text-lighten-4" href="http://www.marketest.co.uk/market-research-questionnaire/482/fruits">Survey source</a>

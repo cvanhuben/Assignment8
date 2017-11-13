@@ -44,7 +44,7 @@
 
 			<div class="col s6">
 				<h2>Help us improve – </br> we actually listen to every response</h2>
-				<a class="waves-effect waves-light btn" href="survey.php">Take the Survey</a>
+				<a class="pulse waves-effect waves-light btn" href="survey.php">Take the Survey</a>
 			</div>
 		</div>
 
@@ -86,7 +86,7 @@
 
 	<footer class="page-footer">
 		<div class="container">
-			<h4 class="white-text">Links</h4>
+			<h4 class="white-text">Sources</h4>
 			<ul>
 				<li>
 					<a class="grey-text text-lighten-4" href="http://www.marketest.co.uk/market-research-questionnaire/482/fruits">Survey source</a>

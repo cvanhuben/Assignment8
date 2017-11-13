@@ -314,7 +314,7 @@
 
 	<footer class="page-footer">
 		<div class="container">
-			<h4 class="white-text">Links</h4>
+			<h4 class="white-text">Sources</h4>
 			<ul>
 				<li>
 					<a class="grey-text text-lighten-4" href="http://www.marketest.co.uk/market-research-questionnaire/482/fruits">Survey source</a>
