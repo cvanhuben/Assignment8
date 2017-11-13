@@ -14,28 +14,26 @@ session_start();
 	$query  = "SELECT * ";
 	$query .= "FROM form ";
 	$query .= "WHERE id =  {$_POST['id']}";
-	
+
 	$result = mysqli_query($connection, $query);
 
 	$pages = mysqli_fetch_assoc($result);
-	
+
 ?>
 
-			
+
 
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
-
-		
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta content="Queens Survey" name="description">
 	<meta content="Queens" name="author">
 	<link rel="icon" href="images/icon.png">
-	<title>Queens Update Survey</title>
+	<title>Update Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
@@ -46,13 +44,7 @@ session_start();
 	<nav>
     <ul>
 			<li >
-				<a href="index.php">Home</a>
-			</li>
-			<li>
-				<a href="#">Survey</a>
-			</li>
-			<li>
-				<a href="admin.php">Admin Log In</a>
+				<a href="admin.php">X</a>
 			</li>
 		</ul>
   </nav>
@@ -64,8 +56,7 @@ session_start();
 
 		<form id="survey" method="post" action="updateScript.php">
 
-		<?php $_SESSION["id"] = $pages["id"]; ?>
-
+<?php $_SESSION["id"] = $pages["id"]; ?>
 
 			<div class="input-block input-field">
         <input id="first-name" type="text" name= "first">
@@ -341,15 +332,13 @@ session_start();
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
-
-<!-- class="btn disabled waves-effect waves-light" -->
-			<button id="submit"  type="submit" name="action">Submit
+			<button class="btn waves-effect waves-light" id="submit" type="submit" name="action">Submit
 		    <i class="material-icons right">send</i>
 		  </button>
 
-
 		</form>
 	</div>
+
 <?php
 	// 4. Release returned data
 	mysqli_free_result($result);
@@ -357,11 +346,37 @@ session_start();
 	// 5. Close database connection
 	mysqli_close($connection);
 ?>
-	<footer>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script type="text/javascript" src="js/interactions.js"></script>
-	</footer>
+
+	<footer class="page-footer">
+		<div class="container">
+			<h4 class="white-text">Links</h4>
+			<ul>
+				<li>
+					<a class="grey-text text-lighten-4" href="http://www.marketest.co.uk/market-research-questionnaire/482/fruits">Survey source</a>
+				</li>
+				<li>
+					<a class="grey-text text-lighten-4"
+						href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwizz7DFyrjXAhUERSYKHbEJBLMQjRwIBw&url=%2Furl%3Fsa%3Di%26rct%3Dj%26q%3D%26esrc%3Ds%26source%3Dimages%26cd%3D%26cad%3Drja%26uact%3D8%26ved%3D0ahUKEwizz7DFyrjXAhUERSYKHbEJBLMQjRwIBw%26url%3Dhttps%253A%252F%252Fwww.rheumchoice.com%252F%26psig%3DAOvVaw2iojM0NeJFm52kAI334sZR%26ust%3D1510560503872506&psig=AOvVaw2iojM0NeJFm52kAI334sZR&ust=1510560503872506">Frequency Icon</a>
+				</li>
+				<li>
+					<a class="grey-text text-lighten-4" href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiH6-K7zLjXAhXKSiYKHchlBq0QjRwIBw&url=https%3A%2F%2Ficons8.com%2Ficon%2Ftag%2Forange-juice&psig=AOvVaw2u7CEMOF8EpSi28DdGobSj&ust=1510561023790851">Orange Juice Icon</a>
+				</li>
+				<li>
+					<a class="grey-text text-lighten-4" href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjCr9SnzbjXAhVGySYKHV3TDXYQjRwIBw&url=https%3A%2F%2Fgallery.yopriceville.com%2FFree-Clipart-Pictures%2FFruit-PNG%2FFruit_Basket_PNG_Vector_Clipart_Image&psig=AOvVaw2ZIyAdHVLMicFkZuUu3JHa&ust=1510561247366109">Fruit Basket Icon</a>
+				</li>
+			</ul>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+          © 2017 Copyright
+          <span class="right">Created by CSC 174: Queens</span>
+			</div>
+    </div>
+  </footer>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/interactions.js"></script>
 
 </body>
 </html>

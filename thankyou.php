@@ -10,78 +10,16 @@
 	<link rel="icon" href="images/icon.png">
 	<title>Queens Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
 <body>
 
-	<div class="parallax-container center valign-wrapper">
-	  <div class="container">
-	    <div class="row">
-	      <div class="col s12 white-text">
-	        <h1>Fruits</h1>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="parallax">
-	    <img src="images/fruits.jpg">
-	  </div>
-	</div>
-
 	<div class="container">
-		<div class="row">
-			<div class="col s6">
-				<p>As fruits, we know we’re colorful and juicy—but that’s not why we’re here.
-				Everyday, we aim to provide society with the most nutrients, vitamins, and
-				uses to be the leading food in everyone’s household. We want to be near you,
-				whether that’s a farmers market or the local supermarket. In love
-				with a fruit that is a bit unique? We want to bring more of those to the markets.
-				Through this survey, we hope to improve what we do as fruits, and not just
-				be the juicy morsels on display at the market. </p>
-			</div>
-
-			<div class="col s6">
-				<h2>Help us improve – </br> we actually listen to every response</h2>
-				<a class="waves-effect waves-light btn" href="survey.php">Take the Survey</a>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col s4">
-				<img src="images/icon-time.png" alt="Stopwatch" width=150px/>
-				<h3>Frequency</h3>
-				<p>Knowing how often you eat and use fruits
-					will help us figure out how to position ourselves
-					to make your experience the best. Go shopping
-					once a week for lots of fruit? First, awesome.
-					Second, we want to make sure your local areas
-					carry the best fruit possible to make that the best
-					part of your week.</p>
-			</div>
-			<div class="col s4">
-				<img src="images/orangejuice.png" alt="Orange Juice" width=150px/>
-				<h3>Use</h3>
-				<p>Do you use fruit just for making face masks?
-					Do you start every morning with a freshly squeezed
-					glass of orane juice? Or do you just grab a banana
-					during the day as a light, but satisfactory snack?
-					We want to know which fruits are used for what, and
-					hopefully we can make those more accessible in
-					the future with our partners!</p>
-			</div>
-			<div class="col s4">
-				<img src="images/basket.jpeg" alt="Fruit basket" width=150px/>
-				<h3>Preferences</h3>
-				<p>Do you prefer to put fruit in your smoothies? If so,
-					which ones? Which is your favorite fruit to eat? Is that
-					the one you buy every week? If not, why? We want to
-					get to the bottom of it and figure out which fruit
-					our consumers love. </p>
-			</div>
-		</div>
-
+		<h1>Fruit Research Survey</h1>
+		<h2>Thank you for your response! We value your thoughts on fruit.</h2>
+		<a class="waves-effect waves-light btn" href="index.php">Return to Home</a>
 	</div>
 
 	<footer class="page-footer">

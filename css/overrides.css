@@ -6,6 +6,10 @@ label {
   margin-bottom: 2em;
 }
 
-#header{
+h1 {
 	font-family: 'Rufina', serif;
 }
+
+/*nav {
+  background: transparent;
+}*/

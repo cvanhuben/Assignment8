@@ -12,11 +12,11 @@
 	// iterate through check boxes to make one long string
 	// https://stackoverflow.com/questions/26014920/multiple-values-into-mysql-from-checkbox
 
-	
-	
+
+
 if(isset($_POST['submit'])){
 	foreach ($_POST['buy'] as $fruit_buy) {
-		
+
 		$fruit_buy .= $fruit_buy.",";
 
 	}
@@ -105,26 +105,5 @@ if(isset($_POST['submit'])){
 	// 5. Close database connection
 	mysqli_close($connection);
 
+	include 'thankyou.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta content="Queens Survey" name="description">
-	<meta content="Queens" name="author">
-	<link rel="icon" href="images/icon.png">
-	<title>insert</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
-</head>
-<body>
-
-	<a href="index.php">Back to Hompage</a>
-
-</body>
-</html>
-
-

@@ -19,24 +19,15 @@
 	<nav>
     <ul>
 			<li >
-				<a href="index.php">Home</a>
-			</li>
-			<li>
-				<a href="survey.php">Survey</a>
-			</li>
-			<li>
-				<a href="#">Admin Log In</a>
+				<a href="#!">Admin Access</a>
 			</li>
 		</ul>
   </nav>
 
 	<div class="container">
 		<h1>Admin Page</h1>
-	</div>
-
 
 <!-- This is to be used at the top of the file -->
-
 <?php
 	// 1. Create a database connection
 	$dbhost = "66.147.242.186";
@@ -46,106 +37,85 @@
 
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
-
 	// 2. Perform database query
 	$query  = "SELECT * ";
 	$query .= "FROM form ";
 	$query .= "ORDER BY id ASC";
 
-
 	$result = mysqli_query($connection, $query);
-	
-
 ?>
 
-<!doctype html>
-<html>
-<head>
-	<title>testAdmin</title>
-	<style type="text/css">
-		td, th{
-			padding: 5px;
-		}
+		<table class="bordered striped responsive-table">
+			<thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+					<th>Email</th>
+					<th>Q1</th>
+					<th>Q2</th>
+					<th>Q3</th>
+					<th>Q4</th>
+					<th>Q5</th>
+					<th>Q6</th>
+					<th>Q7</th>
+					<th>Q8</th>
+					<th>Q9</th>
+					<th>Q10</th>
+					<th>Q11</th>
+					<th>Q12</th>
+					<th>Q13</th>
+        </tr>
+      </thead>
+			<tbody>
 
-
-	</style>
-</head>
-<body>
-
-	<table border>
-
-<!-- <tr>
-			<th>id</th>			
-			<th>First Name</th>
-			<th>Last Name</th>
-			
-		</tr> -->
 <?php
 	// 3. Use returned data (if any)
-	
 	while($pages = mysqli_fetch_assoc($result)){
 ?>
 
-		<tr>
+				<tr>
+					<td><?php echo $pages["id"]; ?></td>
+					<td><?php echo $pages["first_name"]; ?></td>
+					<td><?php echo $pages["last_name"]; ?></td>
+					<td><?php echo $pages["email"]; ?></td>
+					<td><?php echo $pages["fruit_everyday"]; ?></td>
+					<td><?php echo $pages["fruit_per_day"]; ?></td>
+					<td><?php echo $pages["fruit_buy"]; ?></td>
+					<td><?php echo $pages["fruit_as"]; ?></td>
+					<td><?php echo $pages["fruit_frequency"]; ?></td>
+					<td><?php echo $pages["fruit_spend"]; ?></td>
+					<td><?php echo $pages["fruit_store"]; ?></td>
+					<td><?php echo $pages["fruit_reason"]; ?></td>
+					<td><?php echo $pages["fruit_important"]; ?></td>
+					<td><?php echo $pages["fruit_difficult"]; ?></td>
+					<td><?php echo $pages["fruit_drink"]; ?></td>
+					<td><?php echo $pages["fruit_ingredients"]; ?></td>
+					<td><?php echo $pages["fruit_agree"]; ?></td>
+				</tr>
 
-			<td><?php echo $pages["id"]; ?></td>
-			<td><?php echo $pages["first_name"]; ?></td>
-			<td><?php echo $pages["last_name"]; ?></td>
-			<td><?php echo $pages["email"]; ?></td>
-			<td><?php echo $pages["fruit_everyday"]; ?></td>
-			<td><?php echo $pages["fruit_per_day"]; ?></td>
-			<td><?php echo $pages["fruit_buy"]; ?></td>
-			<td><?php echo $pages["fruit_as"]; ?></td>
-			<td><?php echo $pages["fruit_frequency"]; ?></td>
-			<td><?php echo $pages["fruit_spend"]; ?></td>
-			<td><?php echo $pages["fruit_store"]; ?></td>
-			<td><?php echo $pages["fruit_reason"]; ?></td>
-			<td><?php echo $pages["fruit_important"]; ?></td>
-			<td><?php echo $pages["fruit_difficult"]; ?></td>
-			<td><?php echo $pages["fruit_drink"]; ?></td>
-			<td><?php echo $pages["fruit_ingredients"]; ?></td>
-			<td><?php echo $pages["fruit_agree"]; ?></td>
+<?php } ?>
 
+			</tbody>
+		</table>
 
+		<form method="post" action="deleteScript.php">
+			<div>
+				<label for="id">Enter ID to Delete: </label>
+				<input type="text" name="id">
+			</div>
+			<input class="btn waves-effect waves-light" type="submit" value="Submit">
+		</form>
 
+		<form method="post" action="updateSurvey.php">
+			<div>
+				<label for="id">Enter ID to Update: </label>
+				<input type="text" name="id">
+			</div>
+			<input class="btn waves-effect waves-light" type="submit" value="Submit">
+		</form>
 
-
-
-		</tr>
-			
-
-		<?php } ?>
-
-
-
-	</table>
-<br>
-
-
-	<form method="post" action="deleteScript.php">
-		<div>
-			
-			<label for="id">Enter ID to Delete: </label>
-			<input type="text" name="id">
-		</div>
-		<br>
-		<input type="submit" value="Submit">
-	</form>
-
-	<br>
-
-	<form method="post" action="updateSurvey.php">
-		<div>
-			
-			<label for="id">Enter ID to Update: </label>
-			<input type="text" name="id">
-		</div>
-		<br>
-		<input type="submit" value="Submit">
-	</form>
-</body>
-</html>
-
+	</div>
 
 <?php
 	// 4. Release returned data
@@ -155,13 +125,36 @@
 	mysqli_close($connection);
 ?>
 
-
-
-
-	<footer>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
+	<footer class="page-footer">
+		<div class="container">
+			<h4 class="white-text">Links</h4>
+			<ul>
+				<li>
+					<a class="grey-text text-lighten-4" href="http://www.marketest.co.uk/market-research-questionnaire/482/fruits">Survey source</a>
+				</li>
+				<li>
+					<a class="grey-text text-lighten-4"
+						href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwizz7DFyrjXAhUERSYKHbEJBLMQjRwIBw&url=%2Furl%3Fsa%3Di%26rct%3Dj%26q%3D%26esrc%3Ds%26source%3Dimages%26cd%3D%26cad%3Drja%26uact%3D8%26ved%3D0ahUKEwizz7DFyrjXAhUERSYKHbEJBLMQjRwIBw%26url%3Dhttps%253A%252F%252Fwww.rheumchoice.com%252F%26psig%3DAOvVaw2iojM0NeJFm52kAI334sZR%26ust%3D1510560503872506&psig=AOvVaw2iojM0NeJFm52kAI334sZR&ust=1510560503872506">Frequency Icon</a>
+				</li>
+				<li>
+					<a class="grey-text text-lighten-4" href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiH6-K7zLjXAhXKSiYKHchlBq0QjRwIBw&url=https%3A%2F%2Ficons8.com%2Ficon%2Ftag%2Forange-juice&psig=AOvVaw2u7CEMOF8EpSi28DdGobSj&ust=1510561023790851">Orange Juice Icon</a>
+				</li>
+				<li>
+					<a class="grey-text text-lighten-4" href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjCr9SnzbjXAhVGySYKHV3TDXYQjRwIBw&url=https%3A%2F%2Fgallery.yopriceville.com%2FFree-Clipart-Pictures%2FFruit-PNG%2FFruit_Basket_PNG_Vector_Clipart_Image&psig=AOvVaw2ZIyAdHVLMicFkZuUu3JHa&ust=1510561247366109">Fruit Basket Icon</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+					© 2017 Copyright
+					<span class="right">Created by CSC 174: Queens</span>
+			</div>
+		</div>
 	</footer>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/interactions.js"></script>
 
 </body>
 </html>
