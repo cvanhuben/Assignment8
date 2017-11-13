@@ -29,7 +29,7 @@
 		<h2>Please answer this survey as honestly as possible, based on your average
 			eating and buying habits.</h2>
 
-		<form id="survey" method="post" action="insert.php">
+		<form id="survey">
 
 			<div class="input-block input-field">
         <input id="first-name" type="text" name= "first">
@@ -305,9 +305,9 @@
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
-			<button class="btn waves-effect waves-light" id="submit" type="submit" name="action">Submit
+			<a class="waves-effect waves-light btn" id="submit">Submit
 		    <i class="material-icons right">send</i>
-		  </button>
+			</a>
 
 		</form>
 	</div>
