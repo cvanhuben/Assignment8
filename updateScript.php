@@ -19,7 +19,7 @@
 	// $result = mysqli_query($connection, $query);
 
 
-	$id = $_SESSION["id"]; 
+	$id = $_SESSION["id"];
 
 
 // first name
@@ -84,7 +84,7 @@
 
 	if(!empty($_POST['buy'])){
 	foreach ($_POST['buy'] as $buy) {
-		
+
 		$buy .= $buy.",";
 	}
 	$_POST['buy'] = implode(", ", $_POST['buy']);
@@ -153,7 +153,7 @@
 
 // fruit reason
 	if(!empty($_POST['reason'])){
-	
+
 	foreach ($_POST['reason'] as $reason) {
 		$reason .= $reason.",";
 	}
@@ -172,7 +172,7 @@
 	// important
 
 	if(!empty($_POST['important'])){
-	
+
 	foreach ($_POST['important'] as $important) {
 		$important .= $important.",";
 	}
@@ -191,7 +191,7 @@
 	// difficult
 
 	if(!empty($_POST['difficult'])){
-	
+
 	foreach ($_POST['difficult'] as $difficult) {
 		$difficult .= $difficult.",";
 	}
@@ -210,7 +210,7 @@
 	}
 
 	//drink
-	
+
 		if(!empty($_POST['drink'])){
 	$drink = Trim(stripslashes($_POST['drink']));
 	$drink = mysqli_real_escape_string($connection, $drink);
@@ -244,50 +244,19 @@
 		";
 	$result = mysqli_query($connection, $query);
 	}
-	
 
-
-	$query = "SELECT * 
-	FROM form 
+	$query = "SELECT *
+	FROM form
 	WHERE id = $id
 	";
 
 	$result = mysqli_query($connection, $query);
 	$pages = mysqli_fetch_assoc($result);
-?>
 
-
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta content="Queens Survey" name="description">
-	<meta content="Queens" name="author">
-	<link rel="icon" href="images/icon.png">
-	<title>Update Script</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
-</head>
-
-<body>
-
-	
-<p>Record <?php echo $_SESSION['id']?> was updated</p>
-
-
-<a href="admin.php">Back to admin page</a>
-	
-	<?php 
 	mysqli_free_result($result);
 
-	mysqli_close($connection); ?>
+	mysqli_close($connection);
 
-	<footer>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-	</footer>
-</body>
-</html>
+	include 'adminty.php';
+
+?>
