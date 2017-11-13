@@ -1,4 +1,6 @@
 <?php
+
+	session_start();
 	// 1. Create a database connection
 	$dbhost = '66.147.242.186';
 	$dbuser = 'urcscon3_queens';
@@ -90,6 +92,7 @@ if(isset($_POST['submit'])){
 	$fruit_ingredients = mysqli_real_escape_string($connection, $fruit_ingredients);
 	$fruit_agree = mysqli_real_escape_string($connection, $fruit_agree);
 
+	$_SESSION["name"] = $firstName;
 
 	// 2. Perform database query
 	$query  = "INSERT INTO form (";
@@ -105,5 +108,5 @@ if(isset($_POST['submit'])){
 	// 5. Close database connection
 	mysqli_close($connection);
 
-	include 'thankyou.php';
+
 ?>

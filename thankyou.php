@@ -16,6 +16,8 @@
 
 <body>
 
+
+
 	<div class="container">
 		<h1>Fruit Research Survey</h1>
 		<h2>Thank you for your response! We value your thoughts on fruit.</h2>
