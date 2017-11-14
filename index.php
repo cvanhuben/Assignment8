@@ -33,21 +33,27 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s6">
-				<p>As fruits, we know we’re colorful and juicy—but that’s not why we’re here.
+				<p><br></br>As fruits, we know we’re colorful and juicy—but that’s not why we’re here.
 				Everyday, we aim to provide society with the most nutrients, vitamins, and
 				uses to be the leading food in everyone’s household. We want to be near you,
 				whether that’s a farmers market or the local supermarket. In love
 				with a fruit that is a bit unique? We want to bring more of those to the markets.
 				Through this survey, we hope to improve what we do as fruits, and not just
-				be the juicy morsels on display at the market. </p>
+				be the juicy morsels on display at the market.</p>
 			</div>
 
-			<div class="col s6">
-				<h2>Help us improve – </br> we actually listen to every response</h2>
-				<a class="pulse waves-effect waves-light btn" href="survey.php">Take the Survey</a>
+			<div class="col s1">
+				<p>                            </p>
+			</div>
+
+			<div class="col s5">
+				<h4></br>Help us improve – </br> we actually listen to every response</h4>
+				<a class="waves-light btn" href="survey.php">Take the Survey</a>
 			</div>
 		</div>
-
+		<br></br>
+		<br></br>
+		<br></br>
 		<div class="row">
 			<div class="col s4">
 				<img src="images/icon-time.png" alt="Stopwatch" width=150px/>
