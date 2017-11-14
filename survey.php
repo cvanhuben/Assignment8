@@ -18,9 +18,9 @@
 <body class="colorShifter">
 
 	<nav >
-    	<ul class="container">
+    	<ul>
 			<li >
-				<a href="index.php"><i class="material-icons">arrow_back</i></a>
+				<a href="index.php">Back</a>
 			</li>
 		</ul>
  	</nav>
