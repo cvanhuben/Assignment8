@@ -61,13 +61,29 @@ label {
 }
 
 .admin-opt {
-  margin-top: 5em;
-  margin-bottom: 6em;
+  padding: 1em;
 }
+
 table {
+  height: 40em;
+  overflow: scroll;
   margin-bottom: 10em;
+  border-top-left-radius: 1.75em;
+  border-top-right-radius: 1.75em;
+  border: 1px solid #cfd8dc;
+  display: block;
 }
-td{
+thead {
+  background-color: #e58662;
+  color: #fff;
+}
+th {
+  padding: 1em 1.5em;
+  border-radius: 0;
+  font-weight: 400;
+}
+td {
   border-left: 1px solid #cfd8dc;
   border-right: 1px solid #cfd8dc;
+  padding: .5em 1em;
 }
