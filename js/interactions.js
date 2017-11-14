@@ -11,13 +11,6 @@ $(document).ready(function(){
      window.location.href = 'thankyou.php';
     }
   });
-  $('body').on('click', '#delete', function() {
-    let decision = confirm('Are you sure you would like to delete this survey?');
-    if (decision) {
-      $.post('delete.php', $('#delete-id').serialize());
-     window.location.href = 'adminty.php';
-    }
-  });
 
   /*
     Tick other box if text is inputted
