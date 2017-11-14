@@ -88,7 +88,7 @@
 			</div>
 
 			<div class="col s3">
-				<img src="images/basket.jpeg" alt="Fruit basket" width=150px/>
+				<img src="images/basket.jpeg" alt="Fruit basket" width=150px height=150px />
 				<h3>Preferences</h3>
 				<p>Do you prefer to put fruit in your smoothies? If so,
 					which ones? Which is your favorite fruit to eat? Is that
