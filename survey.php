@@ -24,10 +24,11 @@
 		</ul>
   </nav>
 
-	<div class="container">
+	<div class="container center promo">
 		<h1>Fruit Research Survey</h1>
-		<h2>Please answer this survey as honestly as possible, based on your average
-			eating and buying habits.</h2>
+		<p>Please answer this survey as honestly as possible, based on your average
+			eating and buying habits.</p>
+			<br></br>
 
 		<form id="survey">
 
@@ -305,9 +306,13 @@
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
-			<a class="waves-effect waves-light btn" id="submit">Submit
+			<a class="waves-light btn red lighten-2" id="submit">Submit
 		    <i class="material-icons right">send</i>
 			</a>
+			
+			<br></br>
+			<br></br>
+			<br></br>
 
 		</form>
 	</div>
