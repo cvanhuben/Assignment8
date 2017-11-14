@@ -44,6 +44,10 @@ label {
   font-weight: 500;
 }
 
+.function{
+  font-size: 16pt;
+}
+
 #survey-head{
   color: #CC2626
 }

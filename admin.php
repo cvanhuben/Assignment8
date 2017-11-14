@@ -63,7 +63,7 @@
 			<div class="col s5">
 				<form class="admin-opt" method="post" action="deleteScript.php">
 					<div>
-						<label for="id">Enter ID to Delete: </label>
+						<label class="input-header function" for="id">Enter ID to Delete: </label>
 						<input type="text" name="id">
 					</div>
 					<input class="btn waves-light red lighten-2" type="submit" value="Delete">
@@ -73,7 +73,7 @@
 			<div class="col s5 right">
 				<form class="admin-opt" method="post" action="updateSurvey.php">
 					<div>
-						<label for="id">Enter ID to Update: </label>
+						<label class="input-header function" for="id">Enter ID to Update: </label>
 						<input type="text" name="id">
 					</div>
 					<input class="btn waves-light red lighten-2" type="submit" value="Update">
