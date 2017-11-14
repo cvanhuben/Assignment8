@@ -33,7 +33,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s6">
-				<p><br></br>As fruits, we know we’re colorful and juicy—but that’s not why we’re here.
+				<p>As fruits, we know we’re colorful and juicy—but that’s not why we’re here.
 				Everyday, we aim to provide society with the most nutrients, vitamins, and
 				uses to be the leading food in everyone’s household. We want to be near you,
 				whether that’s a farmers market or the local supermarket. In love
@@ -42,20 +42,14 @@
 				be the juicy morsels on display at the market.</p>
 			</div>
 
-			<div class="col s1">
-				<p>                            </p>
-			</div>
-
-			<div class="col s5">
-				<h4></br>Help us improve – </br> we actually listen to every response</h4>
-				<a class="waves-light btn red lighten-2" href="survey.php">Take the Survey</a>
+			<div class="col s5 right">
+				<h4>Help us improve – we actually listen to every response</h4>
+				<a class="waves-light btn red lighten-2 pulse" href="survey.php">Take the Survey</a>
 			</div>
 		</div>
-		<br></br>
-		<br></br>
-		<br></br>
+
 		<div class="row">
-			<div class="col s4 center promo">
+			<div class="col s4 center">
 				<img src="images/icon-time.png" alt="Stopwatch" width=150px/>
 				<h4>Frequency</h4>
 				<p>Knowing how often you eat and use fruits
@@ -67,7 +61,7 @@
 					part of your week.</p>
 			</div>
 
-			<div class="col s4 center promo">
+			<div class="col s4 center">
 				<img src="images/orangejuice.png" alt="Orange Juice" width=150px/>
 				<h4>Use</h4>
 				<p>Do you use fruit just for making face masks?
@@ -79,7 +73,7 @@
 					the future with our partners!</p>
 			</div>
 
-			<div class="col s4 center promo">
+			<div class="col s4 center">
 				<img src="images/basket.jpeg" alt="Fruit basket" width=150px height=150px />
 				<h4>Preferences</h4>
 				<p>Do you prefer to put fruit in your smoothies? If so,
@@ -89,11 +83,6 @@
 					our consumers love. </p>
 			</div>
 		</div>
-
-		<br></br>
-		<br></br>
-		<br></br>
-
 	</div>
 
 	<footer class="page-footer">

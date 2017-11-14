@@ -1,7 +1,36 @@
+.sm-parallax {
+  height: 18em;
+}
+
+h1 {
+	font-family: 'Rufina', serif;
+}
+
+.row {
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
+
+footer {
+  margin-top: 4em;
+}
+
+#colorShifter {
+	background: linear-gradient(#ffe0b2, #f8bbd0);
+}
+
+#shaper {
+	background-color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
 label {
   color: #000;
 }
-
 .input-block {
   margin-bottom: 6em;
 }
@@ -19,33 +48,12 @@ label {
   margin-bottom: 4em;
 }
 
-h1 {
-	font-family: 'Rufina', serif;
-}
-
-.sm-parallax {
-    height: 18em;
-}
-
-#shaper{
-	background-color: white;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 40px;
-	margin-bottom: 40px;
-	margin-top: 40px;
-}
-
-#colorShifter{
-	background: linear-gradient(#ffe0b2, #f8bbd0);
-}
-
 .disabled {
 	pointer-events: none;
 	cursor: none;
 }
 
 td{
-    border-left: 1px solid #cfd8dc;
-    border-right: 1px solid #cfd8dc;
+  border-left: 1px solid #cfd8dc;
+  border-right: 1px solid #cfd8dc;
 }
