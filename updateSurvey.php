@@ -39,42 +39,55 @@ session_start();
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
-<body>
+<body id="colorShifter">
 
 	<nav>
     <ul>
 			<li >
-				<a href="admin.php">X</a>
+				<a href="admin.php">Back</a>
 			</li>
 		</ul>
   </nav>
 
-	<div class="container">
+  	<div class="sm-parallax parallax-container center valign-wrapper">
+	  <div class="parallax">
+	    <img src="images/fruits.jpg">
+	  </div>
+	</div>
+
+	<div class="container center promo" id="shaper">
 		<h1>Fruit Research Survey</h1>
-		<h2>Please answer this survey as honestly as possible, based on your average
-			eating and buying habits.</h2>
+		<p>Please answer this survey as honestly as possible, based on your average
+			eating and buying habits.</p>
+		<br></br>
 
 		<form id="survey" method="post" action="updateScript.php">
 
 <?php $_SESSION["id"] = $pages["id"]; ?>
 
-			<div class="input-block input-field">
+		<p><strong>First Name:</strong></p>
+		<div class="input-block input-field">
         <input id="first-name" type="text" name= "first">
         <label for="first-name"> Your previous answer was: "<?php echo $pages["first_name"]; ?>" </label>
       </div>
+      	<br></br>
 
-			<div class="input-block input-field">
+		<p><strong>Last Name:</strong></p>
+		<div class="input-block input-field">
         <input id="last-name" type="text" name = "last">
         <label for="last-name">Your previous answer was: "<?php echo $pages["last_name"]; ?>"</label>
       </div>
+      	<br></br>
 
-			<div class="input-block input-field">
+		<p><strong>Email:</strong></p>
+		<div class="input-block input-field">
         <input id="email" type="email" name = "email" class="validate">
         <label for="email">Your previous answer was: "<?php echo $pages["email"]; ?>"</label>
       </div>
+      <br></br>
 
 			<div class="input-block">
-				<p>Do you eat fruits everyday? Your previous answer was: "<?php echo $pages["fruit_everyday"]; ?>"</p>
+				<p><strong>Do you eat fruits everyday?</strong> Your previous answer was: "<?php echo $pages["fruit_everyday"]; ?>"</p>
 				<p>
 		      <input class="with-gap" name="everyday" type="radio" id="daily-yes" value="Yes" />
 		      <label for="daily-yes">Yes</label>
@@ -84,9 +97,10 @@ session_start();
 		      <label for="daily-no">No</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>Approximately how many fruits do you eat per day? Your previous answer was: "<?php echo $pages["fruit_per_day"]; ?>"</p>
+				<p></strong>Approximately how many fruits do you eat per day?</strong> Your previous answer was: "<?php echo $pages["fruit_per_day"]; ?>"</p>
 				<p>
 		      <input class="with-gap" name="per_day" type="radio" id="amount-yikes" value="1 or less" />
 		      <label for="amount-yikes">1 or less</label>
@@ -104,9 +118,10 @@ session_start();
 		      <label for="amount-hella">5+</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>What fruits do you usually eat/buy? Your previous answer was: "<?php echo $pages["fruit_buy"]; ?>"</p>
+				<p><strong>What fruits do you usually eat/buy?</strong> Your previous answer was: "<?php echo $pages["fruit_buy"]; ?>"</p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="apple" name= "buy[]" value="apple" />
 		      <label for="apple">Apple</label>
@@ -131,7 +146,6 @@ session_start();
 		      <input type="checkbox" class="filled-in" id="orange" name= "buy[]" value="orange" />
 		      <label for="orange">Orange</label>
 		    </p>
-
 		    <!-- test -->
 		    <p>
 		    	<input type ="checkbox" class = "filled-in" id="other" />
@@ -144,12 +158,13 @@ session_start();
 
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>What do you have your fruit as? Your previous answer was: "<?php echo $pages["fruit_as"]; ?>"</p>
+				<p><strong>What do you have your fruit as?</strong> Your previous answer was: "<?php echo $pages["fruit_as"]; ?>"</p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="snack" name="as[]" value="As a snack" />
-		      <label for="snack">As a snack</label>
+		      <label for="snack">I have fruit as a snack</label>
 		    </p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="breakfast" name="as[]" value="I have a fruit with my breakfast" />
@@ -164,9 +179,10 @@ session_start();
 		      <label for="dessert">I have a fruit as dessert</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>How often do you visit stores to purchase fruits in a week? Your previous answer was: "<?php echo $pages["fruit_frequency"]; ?>"</p>
+				<p></strong>How often do you visit stores to purchase fruits in a week?</strong> Your previous answer was: "<?php echo $pages["fruit_frequency"]; ?>"</p>
 				<p>
 		      <input class="with-gap" type="radio" id="often-less" name="frequency" value="Less than once a week" />
 		      <label for="often-less">Less than once a week</label>
@@ -188,9 +204,10 @@ session_start();
 		      <label for="often-hella">4 or more times a week</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>On average, how much do you spend on fruits per week? Your previous answer was: "<?php echo $pages["fruit_spend"]; ?>"</p>
+				<p><strong>On average, how much do you spend on fruits per week?</strong> Your previous answer was: "<?php echo $pages["fruit_spend"]; ?>"</p>
 				<p>
 		      <input class="with-gap" type="radio" id="spend-5" name="spend" value="$0-5" />
 		      <label for="spend-5">$0-5</label>
@@ -220,14 +237,17 @@ session_start();
 		      <label for="spend-hella">$30+</label>
 		    </p>
 			</div>
+			<br></br>
 
+			<p><strong>Where do you buy your fruits from?</strong></p>
 			<div class="input-block input-field">
         <input id="where" type="text" name="store">
-        <label for="where">Where do you buy your fruits from? Your previous answer was: "<?php echo $pages["fruit_store"]; ?>"</label>
+        <label for="where">Your previous answer was: "<?php echo $pages["fruit_store"]; ?>"</label>
       </div>
+      <br></br>
 
 			<div class="input-block">
-				<p>Why do you purchase fruit? Your previous answer was: "<?php echo $pages["fruit_reason"]; ?>"</p>
+				<p><strong>Why do you purchase fruit?</strong> Your previous answer was: "<?php echo $pages["fruit_reason"]; ?>"</p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="fresh" name="reason[]" value="To eat fresh" />
 		      <label for="fresh">To eat fresh</label>
@@ -249,9 +269,10 @@ session_start();
 		      <label for="health">To be healthy</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>What’s the most important thing you consider when buying fruits? Your previous answer was: "<?php echo $pages["fruit_important"]; ?>"</p>
+				<p><strong>What’s the most important thing you consider when buying fruits?</strong> Your previous answer was: "<?php echo $pages["fruit_important"]; ?>"</p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="price" name= important[] value="Price" />
 		      <label for="price">Price</label>
@@ -277,9 +298,10 @@ session_start();
 		      <label for="like">I like the fruit</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>Please select the things that make it difficult for you to buy fruits. Your previous answer was: "<?php echo $pages["fruit_difficult"]; ?>"</p>
+				<p><strong>Please select the things that make it difficult for you to buy fruits.</strong> Your previous answer was: "<?php echo $pages["fruit_difficult"]; ?>"</p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="difficult-condition" name="difficult[]" value="Condition of fruit" />
 		      <label for="difficult-condition">Condition of fruit</label>
@@ -301,9 +323,10 @@ session_start();
 		      <label for="difficult-availability">Not available where I am</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>Do you drink fruit juice/smoothies? Your previous answer was: "<?php echo $pages["fruit_drink"]; ?>"</p>
+				<p><strong>Do you drink fruit juice/smoothies?</strong> Your previous answer was: "<?php echo $pages["fruit_drink"]; ?>"</p>
 				<p>
 		      <input class="with-gap" name="drink" type="radio" id="smoothies-yes" value="Yes" />
 		      <label for="smoothies-yes">Yes</label>
@@ -313,16 +336,18 @@ session_start();
 		      <label for="smoothies-no">No</label>
 		    </p>
 			</div>
+			<br></br>
 
+			<p><strong>What ingredients do you add in your smoothie?</strong></p>
 			<div class="input-block input-field">
         <input id="ingredients" type="text" name="ingredients">
-        <label for="ingredients">What ingredients do you add in your smoothie? Your previous answer was: "<?php echo $pages["fruit_ingredients"]; ?>"</label>
+        <label for="ingredients">Your previous answer was: "<?php echo $pages["fruit_ingredients"]; ?>"</label>
       </div>
 
 			<div class="input-block">
-		 		<p>Do you agree with this statement “Eating plenty of fruits may help reduce
+		 		<p><strong>Do you agree with this statement: “Eating plenty of fruits may help reduce
 				the risk of many disease, including heart disease, high blood pressure, and
-				some cancers”. Your previous answer was: "<?php echo $pages["fruit_agree"]; ?>"</p>
+				some cancers”.</strong> Your previous answer was: "<?php echo $pages["fruit_agree"]; ?>"</p>
 				<p>
 		      <input class="with-gap" name="agree" type="radio" id="reduce-risk-yes" value="Yes" />
 		      <label for="reduce-risk-yes">Yes</label>
@@ -332,9 +357,14 @@ session_start();
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
-			<button class="btn waves-effect waves-light" id="submit-update" type="submit" name="action">Submit
+			<br></br>
+
+			<button class="btn waves-light red lighten-2" id="submit-update" type="submit" name="action">Submit
 		    <i class="material-icons right">send</i>
 		  </button>
+		  	<br></br>
+			<br></br>
+			<br></br>
 
 		</form>
 	</div>

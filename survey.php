@@ -317,7 +317,7 @@
       <br></br>
 
 			<div class="input-block">
-		 		<p><strong>Do you agree with this statement “Eating plenty of fruits may help reduce
+		 		<p><strong>Do you agree with this statement: “Eating plenty of fruits may help reduce
 				the risk of many disease, including heart disease, high blood pressure, and
 				some cancers”</strong></p>
 				<p>
@@ -329,6 +329,7 @@
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
+			<br></br>
 			<a class="waves-light btn red lighten-2 disabled" id="submit">Submit
 		    <i class="material-icons right">send</i>
 			</a>

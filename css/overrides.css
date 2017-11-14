@@ -26,3 +26,13 @@ h1 {
 #colorShifter{
 	background: linear-gradient(#ffe0b2, #f8bbd0);
 }
+
+.disabled {
+	pointer-events: none;
+	cursor: none;
+}
+
+td{
+    border-left: 1px solid #cfd8dc;
+    border-right: 1px solid #cfd8dc;
+}

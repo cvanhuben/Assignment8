@@ -15,12 +15,25 @@
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
-<body>
+<body id="colorShifter">
 
-	<div class="container">
+	<div class="sm-parallax parallax-container center valign-wrapper">
+	  <div class="parallax">
+	    <img src="images/fruits.jpg">
+	  </div>
+	</div>
+
+
+	<div class="container center promo" id="shaper">
 		<h1>Fruit Research Survey</h1>
-		<h2>Thank you! The database has been updated.</h2>
-		<a class="waves-effect waves-light btn" href="admin.php">Return to Admin Access</a>
+		<p>Thank you! The database has been updated.</p>
+		<br></br>
+		<br></br>
+		<a class="waves-light btn red lighten-2" href="admin.php">Return to Admin Access</a>
+		<br></br>
+		<br></br>
+		<br></br>
+
 	</div>
 
 	<footer class="page-footer">

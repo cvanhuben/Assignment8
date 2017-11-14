@@ -20,13 +20,20 @@
 	<nav>
     <ul>
 			<li >
-				<a href="#!">Admin Access</a>
+				<a href="#!" class="disabled">Admin Access</a>
 			</li>
 		</ul>
   </nav>
 
+  	<div class="sm-parallax parallax-container center valign-wrapper">
+	  <div class="parallax">
+	    <img src="images/fruits.jpg">
+	  </div>
+	</div>
+
+
 	<div class="container">
-		<h1>Fruits</h1>
+		<h1 class="center promo">Fruits</h1>
 
 <!-- This is to be used at the top of the file -->
 <?php
@@ -45,24 +52,31 @@
 
 	$result = mysqli_query($connection, $query);
 ?>
-
+		<br></br>
 		<form method="post" action="deleteScript.php">
 			<div>
 				<label for="id">Enter ID to Delete: </label>
 				<input type="text" name="id">
 			</div>
-			<input class="btn waves-effect waves-light right" type="submit" value="Delete">
+			<input class="btn waves-light red lighten-2" type="submit" value="Delete">
 		</form>
+		<br></br>
+		<br></br>
+
 
 		<form method="post" action="updateSurvey.php">
 			<div>
 				<label for="id">Enter ID to Update: </label>
 				<input type="text" name="id">
 			</div>
-			<input class="btn waves-effect waves-light right" type="submit" value="Update">
+			<input class="btn waves-light red lighten-2" type="submit" value="Update">
 		</form>
 
-		<table class="bordered striped responsive-table">
+		<br></br>
+		<br></br>
+
+
+		<table class="bordered responsive-table highlight">
 			<thead>
         <tr>
           <th>ID</th>
@@ -116,6 +130,10 @@
 			</tbody>
 		</table>
 	</div>
+
+			<br></br>
+		<br></br>
+
 
 <?php
 	// 4. Release returned data
