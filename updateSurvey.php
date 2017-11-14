@@ -35,7 +35,7 @@ session_start();
 	<title id="survey-head">Update Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 

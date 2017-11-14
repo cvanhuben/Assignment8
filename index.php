@@ -11,7 +11,7 @@
 	<title>Queens Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
@@ -27,7 +27,7 @@
 	    </div>
 	  </div>
 	  <div class="parallax">
-	    <img src="images/fruits.jpg">
+	    <img src="images/fruits.jpg" alt="Fruits">
 	  </div>
 	</div>
 
@@ -51,7 +51,7 @@
 
 		<div class="row">
 			<div class="col s4 center">
-				<img src="images/icon-time.png" alt="Stopwatch" width=150px/>
+				<img src="images/icon-time.png" alt="Stopwatch" width=150 />
 				<h4>Frequency</h4>
 				<p>Knowing how often you eat and use fruits
 					will help us figure out how to position ourselves
@@ -63,7 +63,7 @@
 			</div>
 
 			<div class="col s4 center">
-				<img src="images/orangejuice.png" alt="Orange Juice" width=150px/>
+				<img src="images/orangejuice.png" alt="Orange Juice" width=150 />
 				<h4>Use</h4>
 				<p>Do you use fruit just for making face masks?
 					Do you start every morning with a freshly squeezed
@@ -75,7 +75,7 @@
 			</div>
 
 			<div class="col s4 center">
-				<img src="images/basket.jpeg" alt="Fruit basket" width=150px height=150px />
+				<img src="images/basket.jpeg" alt="Fruit basket" width=150 height=150 />
 				<h4>Preferences</h4>
 				<p>Do you prefer to put fruit in your smoothies? If so,
 					which ones? Which is your favorite fruit to eat? Is that
