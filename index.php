@@ -17,6 +17,7 @@
 
 <body>
 
+	<!-- text overlay forked from https://codepen.io/codecampfrancisco/pen/Wpmxrr -->
 	<div class="parallax-container center valign-wrapper">
 	  <div class="container">
 	    <div class="row">
