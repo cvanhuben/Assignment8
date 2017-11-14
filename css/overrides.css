@@ -44,6 +44,10 @@ label {
   font-weight: 500;
 }
 
+#survey-head{
+  color: #CC2626
+}
+
 #submit {
   margin-bottom: 4em;
 }

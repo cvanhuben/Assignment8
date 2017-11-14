@@ -33,7 +33,7 @@
 
 
 	<div class="container">
-		<h1 class="center">Fruits</h1>
+		<h1 class="center white-text">Fruits</h1>
 
 <!-- This is to be used at the top of the file -->
 <?php

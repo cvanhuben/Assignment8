@@ -32,7 +32,7 @@ session_start();
 	<meta content="Queens Survey" name="description">
 	<meta content="Queens" name="author">
 	<link rel="icon" href="images/icon.png">
-	<title>Update Survey</title>
+	<title id="survey-head">Update Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
