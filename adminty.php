@@ -25,7 +25,7 @@
 
 
 	<div class="container center absolute shaper">
-		<h1 id="survey-head">Fruit Research Survey</h1>
+		<h1 class="survey-head">Fruit Research Survey</h1>
 		<p>Thank you! The database has been updated.</p>
 		<a class="waves-light btn red lighten-2 tyreturn" href="admin.php">Return to Admin Access</a>
 	</div>

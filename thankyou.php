@@ -25,7 +25,7 @@
 
 
 	<div class="container absolute center shaper">
-		<h1 id="survey-head">Fruit Research Survey</h1>
+		<h1 class="survey-head">Fruit Research Survey</h1>
 		<p>Thank you for your response,
 			<?php
 				session_start();
