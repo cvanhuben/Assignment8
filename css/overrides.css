@@ -3,7 +3,20 @@ label {
 }
 
 .input-block {
-  margin-bottom: 2em;
+  margin-bottom: 6em;
+}
+.input-group .input-block {
+  margin-bottom: 0;
+}
+.input-group {
+  margin-bottom: 6em;
+}
+.input-header {
+  font-weight: 500;
+}
+
+#submit {
+  margin-bottom: 4em;
 }
 
 h1 {
