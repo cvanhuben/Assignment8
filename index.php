@@ -67,12 +67,6 @@
 					part of your week.</p>
 			</div>
 
-<!-- 			<div class="col s1">
-				<p>                            </p>
-			</div>
-
- -->
-
 			<div class="col s4 center promo">
 				<img src="images/orangejuice.png" alt="Orange Juice" width=150px/>
 				<h4>Use</h4>
@@ -85,11 +79,6 @@
 					the future with our partners!</p>
 			</div>
 
-<!-- 			<div class="col s1">
-				<p>                            </p>
-			</div>
-
- -->
 			<div class="col s4 center promo">
 				<img src="images/basket.jpeg" alt="Fruit basket" width=150px height=150px />
 				<h4>Preferences</h4>
