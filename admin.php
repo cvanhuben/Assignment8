@@ -25,7 +25,15 @@
 		</ul>
   </nav>
 
-  	<div class="sm-parallax parallax-container center valign-wrapper">
+	<!-- text overlay forked from https://codepen.io/codecampfrancisco/pen/Wpmxrr -->
+	<div class="sm-parallax parallax-container center valign-wrapper">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col s12 white-text">
+	        <h1>Fruits</h1>
+	      </div>
+	    </div>
+	  </div>
 	  <div class="parallax">
 	    <img src="images/fruits.jpg">
 	  </div>
@@ -33,8 +41,7 @@
 
 
 	<div class="container">
-		<h1 class="center white-text">Fruits</h1>
-
+		
 <!-- This is to be used at the top of the file -->
 <?php
 	// 1. Create a database connection
