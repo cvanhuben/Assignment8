@@ -42,7 +42,7 @@ session_start();
 <body class="colorShifter">
 
 	<nav>
-    <ul>
+    <ul class="container">
 			<li >
 				<a href="admin.php">Back</a>
 			</li>

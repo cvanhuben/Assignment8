@@ -18,7 +18,7 @@
 <body class="colorShifter">
 
 	<nav>
-    	<ul>
+    	<ul class="container">
 			<li >
 				<a href="index.php">Back</a>
 			</li>
