@@ -55,9 +55,9 @@
 		<br></br>
 		<br></br>
 		<div class="row">
-			<div class="col s4">
+			<div class="col s4 center promo">
 				<img src="images/icon-time.png" alt="Stopwatch" width=150px/>
-				<h3>Frequency</h3>
+				<h4>Frequency</h4>
 				<p>Knowing how often you eat and use fruits
 					will help us figure out how to position ourselves
 					to make your experience the best. Go shopping
@@ -70,12 +70,12 @@
 <!-- 			<div class="col s1">
 				<p>                            </p>
 			</div>
+
  -->
 
-
-			<div class="col s3">
+			<div class="col s4 center promo">
 				<img src="images/orangejuice.png" alt="Orange Juice" width=150px/>
-				<h3>Use</h3>
+				<h4>Use</h4>
 				<p>Do you use fruit just for making face masks?
 					Do you start every morning with a freshly squeezed
 					glass of orane juice? Or do you just grab a banana
@@ -88,10 +88,11 @@
 <!-- 			<div class="col s1">
 				<p>                            </p>
 			</div>
+
  -->
-			<div class="col s4">
+			<div class="col s4 center promo">
 				<img src="images/basket.jpeg" alt="Fruit basket" width=150px height=150px />
-				<h3>Preferences</h3>
+				<h4>Preferences</h4>
 				<p>Do you prefer to put fruit in your smoothies? If so,
 					which ones? Which is your favorite fruit to eat? Is that
 					the one you buy every week? If not, why? We want to
