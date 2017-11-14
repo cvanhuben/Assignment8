@@ -18,12 +18,12 @@
 <body>
 
 	<nav>
-    <ul>
+    	<ul>
 			<li >
-				<a href="index.php">X</a>
+				<a href="index.php">Back</a>
 			</li>
 		</ul>
-  </nav>
+ 	</nav>
 
 
 	<div class="sm-parallax parallax-container center valign-wrapper">
