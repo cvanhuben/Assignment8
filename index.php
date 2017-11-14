@@ -48,7 +48,7 @@
 
 			<div class="col s5">
 				<h4></br>Help us improve – </br> we actually listen to every response</h4>
-				<a class="waves-light btn" href="survey.php">Take the Survey</a>
+				<a class="waves-light btn red lighten-2" href="survey.php">Take the Survey</a>
 			</div>
 		</div>
 		<br></br>
