@@ -44,7 +44,7 @@ session_start();
 	<nav>
     <ul class="container">
 			<li >
-				<a href="admin.php">Back</a>
+				<a href="admin.php"><i class="material-icons">arrow_back</i></a>
 			</li>
 		</ul>
   </nav>
