@@ -28,7 +28,7 @@
 
 	<div class="sm-parallax parallax-container center valign-wrapper">
 	  <div class="parallax">
-	    <img src="images/fruits.jpg">
+	    <img src="images/fruits.jpg" alt="Fruits">
 	  </div>
 	</div>
 
@@ -121,7 +121,7 @@
 		    	<input type ="checkbox" class = "filled-in" id="other" />
 		    	<label for="other">Other</label>
 		    	<div class="input-block input-field">
-        		<input id="other" type="text" name= "buy[]">
+        		<input id="other" type="text" name= "buy[]" />
       		</div>
 		    </p>
 			</div>

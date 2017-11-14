@@ -27,7 +27,7 @@
 	    </div>
 	  </div>
 	  <div class="parallax">
-	    <img src="images/fruits.jpg">
+	    <img src="images/fruits.jpg" alt="Fruits">
 	  </div>
 	</div>
 

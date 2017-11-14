@@ -19,7 +19,7 @@
 
 	<div class="sm-parallax parallax-container center valign-wrapper">
 	  <div class="parallax">
-	    <img src="images/fruits.jpg">
+	    <img src="images/fruits.jpg" alt="Fruits">
 	  </div>
 	</div>
 
