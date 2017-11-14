@@ -11,6 +11,13 @@ $(document).ready(function(){
      window.location.href = 'thankyou.php';
     }
   });
+  $('body').on('click', '#delete', function() {
+    let decision = confirm('Are you sure you would like to delete this survey?');
+    if (decision) {
+      $.post('delete.php', $('#delete-id').serialize());
+     window.location.href = 'adminty.php';
+    }
+  });
 
   /*
     Tick other box if text is inputted
@@ -22,19 +29,6 @@ $(document).ready(function(){
       $("input[id='other'][type='checkbox']").prop('checked', false);
     }
   });
-
-  // $('body').on('focusout', "input[id='other'][type='checkbox']", function() {
-  //   const othertext = $("input[id='other'][type='text']");
-  //   if($(this).is(':checked') && !othertext.val()) {
-  //     if (!othertext.hasClass('invalid')) {
-  //       console.log('text is not yet invalid so we will add it');
-  //       othertext.addClass('invalid');
-  //     }
-  //   } else if (othertext.val()) {
-  //     console.log('there is value in text so we will remove invalid class');
-  //     othertext.removeClass('invalid');
-  //   }
-  // });
 
   /*
     Toggle disabled submit button
@@ -86,27 +80,8 @@ $(document).ready(function(){
     if (!document.forms['survey']['ingredients'].value) return false;
     // agree
     if (!document.forms['survey']['agree'].value) return false;
-    // buy[]
-    if (!checkElementValidity('$(input[name="buy[]"])')) return false;
-    // as[]
-    if (!checkElementValidity('$(input[name="as[]"])')) return false;
-    // reason[]
-    if (!checkElementValidity('$(input[name="reason[]"])')) return false;
-    // important[]
-    if (!checkElementValidity('$(input[name="important[]"])')) return false;
-    // difficult[]
-    if (!checkElementValidity('$(input[name="difficult[]"])')) return false;
     // if no elements in the form are false,
     return true;
-  }
-
-  function checkElementValidity(inputGroup) {
-    // inputGroup.each(function() {
-    //   if (element.val()) {
-         return true;
-    //   }
-    // });
-    // return false;
   }
 
 });

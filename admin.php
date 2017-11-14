@@ -61,12 +61,12 @@
 ?>
 		<div class="row">
 			<div class="col s5">
-				<form class="admin-opt" method="post" action="deleteScript.php">
+				<form class="admin-opt" id="delete-id">
 					<div>
 						<label class="input-header function" for="id">Enter ID to Delete: </label>
 						<input type="text" name="id">
 					</div>
-					<input class="btn waves-light red lighten-2" type="submit" value="Delete">
+					<a id="delete" class="btn waves-light red lighten-2">Delete</a>
 				</form>
 			</div>
 
