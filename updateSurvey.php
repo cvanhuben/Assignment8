@@ -56,7 +56,7 @@ session_start();
 	</div>
 
 	<div class="container center" id="shaper">
-		<h1>Fruit Research Survey</h1>
+		<h1 id="survey-head">Fruit Research Survey</h1>
 		<p>Please answer this survey as honestly as possible, based on your average
 			eating and buying habits.</p>
 
