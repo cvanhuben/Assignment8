@@ -55,7 +55,7 @@
 		<br></br>
 		<br></br>
 		<div class="row">
-			<div class="col s3">
+			<div class="col s4">
 				<img src="images/icon-time.png" alt="Stopwatch" width=150px/>
 				<h3>Frequency</h3>
 				<p>Knowing how often you eat and use fruits
@@ -67,9 +67,11 @@
 					part of your week.</p>
 			</div>
 
-			<div class="col s1">
+<!-- 			<div class="col s1">
 				<p>                            </p>
 			</div>
+ -->
+
 
 			<div class="col s3">
 				<img src="images/orangejuice.png" alt="Orange Juice" width=150px/>
@@ -83,11 +85,11 @@
 					the future with our partners!</p>
 			</div>
 
-			<div class="col s1">
+<!-- 			<div class="col s1">
 				<p>                            </p>
 			</div>
-
-			<div class="col s3">
+ -->
+			<div class="col s4">
 				<img src="images/basket.jpeg" alt="Fruit basket" width=150px height=150px />
 				<h3>Preferences</h3>
 				<p>Do you prefer to put fruit in your smoothies? If so,
