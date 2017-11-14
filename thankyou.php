@@ -20,7 +20,28 @@
 
 	<div class="container">
 		<h1>Fruit Research Survey</h1>
-		<h2>Thank you for your response! We value your thoughts on fruit.</h2>
+		<h2>Thank you for your response,
+			<?php
+				session_start();
+				// 1. Create a database connection
+				$dbhost = '66.147.242.186';
+				$dbuser = 'urcscon3_queens';
+				$dbpass = 'coffee1N';
+				$dbname = 'urcscon3_queens';
+
+				$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+				// 2. Perform database query
+				$query  = "SELECT * ";
+				$query .= "FROM form ";
+				$query .= "ORDER BY ID DESC LIMIT 1";
+				$result = mysqli_query($connection, $query);
+
+				echo mysqli_fetch_assoc($result)["first_name"];
+
+				mysqli_close($connection);
+			?>
+			! We value your thoughts on fruit.</h2>
 		<a class="waves-effect waves-light btn" href="index.php">Return to Home</a>
 	</div>
 
