@@ -10,8 +10,8 @@ h1 {
 	font-family: 'Rufina', serif;
 }
 
-.parallax-container {
-    height: 150px;
+.sm-parallax {
+    height: 18em;
 }
 
 /*nav {

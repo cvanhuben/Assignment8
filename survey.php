@@ -10,6 +10,7 @@
 	<link rel="icon" href="images/icon.png">
 	<title>Queens Survey</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
@@ -25,7 +26,7 @@
   </nav>
 
 
-	<div class="parallax-container center valign-wrapper">
+	<div class="sm-parallax parallax-container center valign-wrapper">
 	  <div class="parallax">
 	    <img src="images/fruits.jpg">
 	  </div>
@@ -234,7 +235,7 @@
 			<div class="input-block">
 				<p>What’s the most important thing you consider when buying fruits?</p>
 				<p>
-		      <input type="checkbox" class="filled-in" id="price" name= important[] value="Price" />
+		      <input type="checkbox" class="filled-in" id="price" name="important[]" value="Price" />
 		      <label for="price">Price</label>
 		    </p>
 				<p>
@@ -313,7 +314,7 @@
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
-			<a class="waves-light btn red lighten-2" id="submit">Submit
+			<a class="waves-light btn red lighten-2 disabled" id="submit">Submit
 		    <i class="material-icons right">send</i>
 			</a>
 			
