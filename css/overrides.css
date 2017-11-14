@@ -6,6 +6,13 @@ h1 {
 	font-family: 'Rufina', serif;
 }
 
+.absolute {
+  position: absolute;
+  top: 10em;
+  left: 0;
+  right: 0;
+}
+
 .row {
   margin-top: 3em;
   margin-bottom: 6em;
@@ -15,11 +22,16 @@ footer {
   margin-top: 4em;
 }
 
-#colorShifter {
+.colorShifter {
 	background: linear-gradient(#ffe0b2, #f8bbd0);
 }
 
-#shaper {
+.colorShifterSingleView {
+  background: linear-gradient(#ffe0b2, #f8bbd0);
+  height: 100vh;
+}
+
+.shaper {
 	background-color: white;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -55,8 +67,8 @@ label {
   margin-bottom: 4em;
 }
 .tyreturn {
-  margin-top: 6em;
-  margin-bottom: 7em;
+  margin-top: 2em;
+  margin-bottom: 5em;
 }
 
 .disabled {

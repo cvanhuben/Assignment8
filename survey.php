@@ -15,7 +15,7 @@
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
-<body id="colorShifter">
+<body class="colorShifter">
 
 	<nav>
     	<ul>
@@ -32,7 +32,7 @@
 	  </div>
 	</div>
 
-	<div class="container center" id="shaper">
+	<div class="container center shaper">
 		<h1 id="survey-head">Fruit Research Survey</h1>
 		<p>Please answer this survey as honestly as possible, based on your average
 			eating and buying habits.</p>
