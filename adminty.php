@@ -24,16 +24,10 @@
 	</div>
 
 
-	<div class="container center promo" id="shaper">
+	<div class="container center" id="shaper">
 		<h1>Fruit Research Survey</h1>
 		<p>Thank you! The database has been updated.</p>
-		<br></br>
-		<br></br>
-		<a class="waves-light btn red lighten-2" href="admin.php">Return to Admin Access</a>
-		<br></br>
-		<br></br>
-		<br></br>
-
+		<a class="waves-light btn red lighten-2 tyreturn" href="admin.php">Return to Admin Access</a>
 	</div>
 
 	<footer class="page-footer">

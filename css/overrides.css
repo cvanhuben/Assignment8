@@ -47,12 +47,26 @@ label {
 #submit {
   margin-bottom: 4em;
 }
+#submit-update {
+  margin-bottom: 4em;
+}
+.tyreturn {
+  margin-top: 6em;
+  margin-bottom: 7em;
+}
 
 .disabled {
 	pointer-events: none;
 	cursor: none;
 }
 
+.admin-opt {
+  margin-top: 5em;
+  margin-bottom: 6em;
+}
+table {
+  margin-bottom: 10em;
+}
 td{
   border-left: 1px solid #cfd8dc;
   border-right: 1px solid #cfd8dc;

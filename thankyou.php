@@ -24,7 +24,7 @@
 	</div>
 
 
-	<div class="container center promo" id="shaper">
+	<div class="container center" id="shaper">
 		<h1>Fruit Research Survey</h1>
 		<p>Thank you for your response,
 			<?php
@@ -47,13 +47,8 @@
 
 				mysqli_close($connection);
 			?>! We value your thoughts on fruit.</p>
-			<br></br>
-			<br></br>
 
-		<a class="waves-light btn red lighten-2" href="index.php">Return to Home</a>
-			<br></br>
-			<br></br>
-			<br></br>
+		<a class="waves-light btn red lighten-2 tyreturn" href="index.php">Return to Home</a>
 
 	</div>
 

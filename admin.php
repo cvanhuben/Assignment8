@@ -33,7 +33,7 @@
 
 
 	<div class="container">
-		<h1 class="center promo">Fruits</h1>
+		<h1 class="center">Fruits</h1>
 
 <!-- This is to be used at the top of the file -->
 <?php
@@ -52,28 +52,23 @@
 
 	$result = mysqli_query($connection, $query);
 ?>
-		<br></br>
-		<form method="post" action="deleteScript.php">
+
+		<form class="admin-opt" method="post" action="deleteScript.php">
 			<div>
 				<label for="id">Enter ID to Delete: </label>
 				<input type="text" name="id">
 			</div>
 			<input class="btn waves-light red lighten-2" type="submit" value="Delete">
 		</form>
-		<br></br>
-		<br></br>
 
 
-		<form method="post" action="updateSurvey.php">
+		<form class="admin-opt" method="post" action="updateSurvey.php">
 			<div>
 				<label for="id">Enter ID to Update: </label>
 				<input type="text" name="id">
 			</div>
 			<input class="btn waves-light red lighten-2" type="submit" value="Update">
 		</form>
-
-		<br></br>
-		<br></br>
 
 
 		<table class="bordered responsive-table highlight">
@@ -130,10 +125,6 @@
 			</tbody>
 		</table>
 	</div>
-
-			<br></br>
-		<br></br>
-
 
 <?php
 	// 4. Release returned data
