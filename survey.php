@@ -15,7 +15,7 @@
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
-<body>
+<body id="colorShifter">
 
 	<nav>
     	<ul>
@@ -32,7 +32,7 @@
 	  </div>
 	</div>
 
-	<div class="container center promo">
+	<div class="container center promo" id="shaper">
 		<h1>Fruit Research Survey</h1>
 		<p>Please answer this survey as honestly as possible, based on your average
 			eating and buying habits.</p>
@@ -40,6 +40,7 @@
 
 		<form id="survey">
 
+			<p><strong>Personal Info</strong></p>
 			<div class="input-block input-field">
         <input id="first-name" type="text" name= "first">
         <label for="first-name">First name</label>
@@ -54,9 +55,10 @@
         <input id="email" type="email" name = "email" class="validate">
         <label for="email">Email</label>
       </div>
+      <br></br>
 
 			<div class="input-block">
-				<p>Do you eat fruits everyday?</p>
+				<p><strong>Do you eat fruits everyday?</strong></p>
 				<p>
 		      <input class="with-gap" name="everyday" type="radio" id="daily-yes" value="Yes" />
 		      <label for="daily-yes">Yes</label>
@@ -66,9 +68,10 @@
 		      <label for="daily-no">No</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>Approximately how many fruits do you eat per day?</p>
+				<p><strong>Approximately how many fruits do you eat per day?</strong></p>
 				<p>
 		      <input class="with-gap" name="per_day" type="radio" id="amount-yikes" value="1 or less" />
 		      <label for="amount-yikes">1 or less</label>
@@ -86,9 +89,10 @@
 		      <label for="amount-hella">5+</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>What fruits do you usually eat/buy?</p>
+				<p><strong>What fruits do you usually eat/buy?</strong></p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="apple" name= "buy[]" value="apple" />
 		      <label for="apple">Apple</label>
@@ -113,7 +117,6 @@
 		      <input type="checkbox" class="filled-in" id="orange" name= "buy[]" value="orange" />
 		      <label for="orange">Orange</label>
 		    </p>
-
 		    <!-- test -->
 		    <p>
 		    	<input type ="checkbox" class = "filled-in" id="other" />
@@ -126,12 +129,13 @@
 
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>What do you have your fruit as?</p>
+				<p><strong>What do you have your fruit as?</strong></p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="snack" name="as[]" value="As a snack" />
-		      <label for="snack">As a snack</label>
+		      <label for="snack">I have fruit as a snack</label>
 		    </p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="breakfast" name="as[]" value="I have a fruit with my breakfast" />
@@ -146,9 +150,10 @@
 		      <label for="dessert">I have a fruit as dessert</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>How often do you visit stores to purchase fruits in a week?</p>
+				<p><strong>How often do you visit stores to purchase fruits in a week?</strong></p>
 				<p>
 		      <input class="with-gap" type="radio" id="often-less" name="frequency" value="Less than once a week" />
 		      <label for="often-less">Less than once a week</label>
@@ -170,9 +175,10 @@
 		      <label for="often-hella">4 or more times a week</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>On average, how much do you spend on fruits per week?</p>
+				<p><strong>On average, how much do you spend on fruits per week?</strong></p>
 				<p>
 		      <input class="with-gap" type="radio" id="spend-5" name="spend" value="$0-5" />
 		      <label for="spend-5">$0-5</label>
@@ -202,14 +208,17 @@
 		      <label for="spend-hella">$30+</label>
 		    </p>
 			</div>
+			<br></br>
 
+			<p><strong>Purchases</strong></p>
 			<div class="input-block input-field">
         <input id="where" type="text" name="store">
         <label for="where">Where do you buy your fruits from?</label>
       </div>
+      <br></br>
 
 			<div class="input-block">
-				<p>Why do you purchase fruit?</p>
+				<p><strong>Why do you purchase fruit?</strong></p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="fresh" name="reason[]" value="To eat fresh" />
 		      <label for="fresh">To eat fresh</label>
@@ -231,9 +240,10 @@
 		      <label for="health">To be healthy</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>What’s the most important thing you consider when buying fruits?</p>
+				<p><strong>What’s the most important thing you consider when buying fruits?</strong></p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="price" name="important[]" value="Price" />
 		      <label for="price">Price</label>
@@ -256,12 +266,13 @@
 		    </p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="like" name="important[]" value="I like the fruit" />
-		      <label for="like">I like the fruit</label>
+		      <label for="like">If I like the fruit</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>Please select the things that make it difficult for you to buy fruits:</p>
+				<p><strong>Please select the things that make it difficult for you to buy fruits:</strong></p>
 				<p>
 		      <input type="checkbox" class="filled-in" id="difficult-condition" name="difficult[]" value="Condition of fruit" />
 		      <label for="difficult-condition">Condition of fruit</label>
@@ -283,9 +294,10 @@
 		      <label for="difficult-availability">Not available where I am</label>
 		    </p>
 			</div>
+			<br></br>
 
 			<div class="input-block">
-				<p>Do you drink fruit juice/smoothies?</p>
+				<p><strong>Do you drink fruit juice/smoothies?</strong></p>
 				<p>
 		      <input class="with-gap" name="drink" type="radio" id="smoothies-yes" value="Yes" />
 		      <label for="smoothies-yes">Yes</label>
@@ -295,16 +307,19 @@
 		      <label for="smoothies-no">No</label>
 		    </p>
 			</div>
+			<br></br>
 
+			<p><strong>Ingredients</strong></p>
 			<div class="input-block input-field">
         <input id="ingredients" type="text" name="ingredients">
         <label for="ingredients">What ingredients do you add in your smoothie?</label>
       </div>
+      <br></br>
 
 			<div class="input-block">
-		 		<p>Do you agree with this statement “Eating plenty of fruits may help reduce
+		 		<p><strong>Do you agree with this statement “Eating plenty of fruits may help reduce
 				the risk of many disease, including heart disease, high blood pressure, and
-				some cancers”</p>
+				some cancers”</strong></p>
 				<p>
 		      <input class="with-gap" name="agree" type="radio" id="reduce-risk-yes" value="Yes" />
 		      <label for="reduce-risk-yes">Yes</label>
