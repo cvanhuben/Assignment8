@@ -15,13 +15,18 @@
 	<link type="text/css" rel="stylesheet" href="css/overrides.css"/>
 </head>
 
-<body>
+<body id="colorShifter">
+
+	<div class="sm-parallax parallax-container center valign-wrapper">
+	  <div class="parallax">
+	    <img src="images/fruits.jpg">
+	  </div>
+	</div>
 
 
-
-	<div class="container">
+	<div class="container center promo" id="shaper">
 		<h1>Fruit Research Survey</h1>
-		<h2>Thank you for your response,
+		<p>Thank you for your response,
 			<?php
 				session_start();
 				// 1. Create a database connection
@@ -41,9 +46,15 @@
 				echo mysqli_fetch_assoc($result)["first_name"];
 
 				mysqli_close($connection);
-			?>
-			! We value your thoughts on fruit.</h2>
-		<a class="waves-effect waves-light btn" href="index.php">Return to Home</a>
+			?>! We value your thoughts on fruit.</p>
+			<br></br>
+			<br></br>
+
+		<a class="waves-light btn red lighten-2" href="index.php">Return to Home</a>
+			<br></br>
+			<br></br>
+			<br></br>
+
 	</div>
 
 	<footer class="page-footer">
