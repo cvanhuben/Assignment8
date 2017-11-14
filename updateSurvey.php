@@ -331,7 +331,7 @@ session_start();
 		      <label for="reduce-risk-no">No</label>
 		    </p>
 			</div>
-			<button class="btn waves-effect waves-light" id="submit" type="submit" name="action">Submit
+			<button class="btn waves-effect waves-light" id="submit-update" type="submit" name="action">Submit
 		    <i class="material-icons right">send</i>
 		  </button>
 
