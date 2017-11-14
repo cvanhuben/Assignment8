@@ -10,6 +10,10 @@ h1 {
 	font-family: 'Rufina', serif;
 }
 
+.parallax-container {
+    height: 150px;
+}
+
 /*nav {
   background: transparent;
 }*/

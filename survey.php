@@ -24,6 +24,13 @@
 		</ul>
   </nav>
 
+
+	<div class="parallax-container center valign-wrapper">
+	  <div class="parallax">
+	    <img src="images/fruits.jpg">
+	  </div>
+	</div>
+
 	<div class="container center promo">
 		<h1>Fruit Research Survey</h1>
 		<p>Please answer this survey as honestly as possible, based on your average
