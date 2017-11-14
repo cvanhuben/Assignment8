@@ -17,10 +17,10 @@
 
 <body class="colorShifter">
 
-	<nav>
+	<nav >
     	<ul class="container">
 			<li >
-				<a href="index.php">Back</a>
+				<a href="index.php"><i class="material-icons">arrow_back</i></a>
 			</li>
 		</ul>
  	</nav>
