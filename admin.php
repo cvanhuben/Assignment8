@@ -58,7 +58,7 @@
 						<label class="input-header function" for="id">Enter ID to Delete: </label>
 						<input type="text" name="id">
 					</div>
-					<a id="delete" class="btn waves-light red lighten-2">Delete</a>
+					<input class="btn waves-light red lighten-2" type="submit" value="Delete">
 				</form>
 			</div>
 
