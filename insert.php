@@ -93,7 +93,7 @@ if(isset($_POST['submit'])){
 	$fruit_agree = mysqli_real_escape_string($connection, $fruit_agree);
 
 	$_SESSION["name"] = $firstName;
-
+	
 	// 2. Perform database query
 	$query  = "INSERT INTO form (";
 	$query .= "first_name, last_name, email, fruit_everyday, fruit_per_day, fruit_buy, fruit_as, fruit_frequency, fruit_spend, fruit_store

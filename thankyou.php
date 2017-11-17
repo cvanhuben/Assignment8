@@ -37,13 +37,24 @@
 
 				$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
-				// 2. Perform database query
-				$query  = "SELECT * ";
-				$query .= "FROM form ";
-				$query .= "ORDER BY ID DESC LIMIT 1";
-				$result = mysqli_query($connection, $query);
+				$name = $_SESSION["name"];
 
-				echo mysqli_fetch_assoc($result)["first_name"];
+				// 2. Perform database query
+				// $query  = "SELECT * ";
+				// $query .= "FROM form ";
+				// $query .= "WHERE first_name = '_SESSION("first_name")'";
+				// $query .= "ORDER BY ID DESC LIMIT 1";
+				// $result = mysqli_query($connection, $query);
+
+				$query = "SELECT first_name FROM form
+				WHERE first_name = '$name'
+				";
+				$result = mysqli_query($connection, $query);
+				$pages = mysqli_fetch_assoc($result);
+
+				echo $pages["first_name"];
+
+				// echo mysqli_fetch_assoc($result)["first_name"];
 
 				mysqli_close($connection);
 			?>! We value your thoughts on fruit.</p>
